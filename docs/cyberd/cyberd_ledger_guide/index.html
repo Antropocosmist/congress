@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/cyberd/cyberd_ledger_guide/" />
+<link rel="alternate" href="../../../docs/cyberd/cyberd_ledger_guide/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/cyberd/cyberd_ledger_guide/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Cyberd Ledger Guide
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+  <ul>
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/chaingear/" >
+    
+  
+    
+    
+    Chaingear
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/whitepaper/" >
+    
+  
+    
+    Whitepaper
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/cyb/" >
+    
+  
+    
+    
+    Cyb
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/app-guidelines/" >
+    
+  
+    
+    App Guidelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/cyb/" >
+    
+  
+    
+    Cyb
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/dura/" >
+    
+  
+    
+    Dura
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/web3-vision/" >
+    
+  
+    
+    Web3 Vision
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd_ledger_guide/"  class="active">
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="ledger-nano-support">Ledger nano Support</h1>
+
+<p>It is possible to use your Ledger device with cyberd to store keys and sign transactions.</p>
+
+<h2 id="cyberd-cli-ledger-nano">Cyberd CLI &amp; Ledger Nano</h2>
+
+<p>How to get started. First of all, you&rsquo;ll need a couple of things to be done:</p>
+
+<ul>
+<li><p>A running and synced cyberd node (how to: <a href="https://github.com/cybercongress/cyberd/blob/0.1.5/docs/run_validator.md">here</a> and <a href="https://github.com/cybercongress/cyberd/blob/master/docs/ultimate-commands-guide_v2.md">here</a>)</p></li>
+
+<li><p><a href="https://support.ledger.com/hc/en-us/articles/360000613793-Set-up-as-new-device">Setup</a> your Ledger device and <a href="https://github.com/cosmos/ledger-cosmos/blob/master/README.md#installing">install Cosmos app on it</a> (the latest firmware for Ledger and Cosmos app v1.5.3 is required)</p></li>
+</ul>
+
+<p>It is necessary to verify that cyberd is built with netgo and Ledger tags. To check that, we can run: <code>cyberdcli version --long</code>.</p>
+
+<h2 id="add-your-ledger-key">Add your Ledger key</h2>
+
+<p>If you have set up your Ledger device on a different machine then the one running cyberd, it is necessary to make sure that the Ledger device is generally working on this machine. A great way to do so is installing <a href="https://shop.ledger.com/pages/ledger-live">Ledger Live</a> on the machine and trying to connect your Ledger device to it. This will show possible issues and error codes to work with (<a href="https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues">Fix connection issues</a> guide from Ledger).
+When you made sure that your Ledger device is successfully interacting with your machine do the following:</p>
+
+<ul>
+<li>Connect and unlock your Ledger device</li>
+<li>Open the Cosmos app on your Ledger</li>
+<li>Create an account in cyberdcli from your Ledger key</li>
+</ul>
+
+<p>For account creation run:</p>
+
+<pre><code class="language-js">cyberdcli keys add &lt;your_key_name&gt; --ledger
+</code></pre>
+
+<p>After submitting this command your Ledger device should show a generated address and will wait for confirmation. Hit confirm the button and in the console, you&rsquo;ll see the following output:</p>
+
+<pre><code class="language-js">- name: &lt;your_key_name&gt;
+  type: ledger
+  address: cyber1gw5kdey7fs9wdh05w66s0h4s24tjdvtcp5fhky
+  pubkey: cyberpub1addwnpepq0lfpdumac47nysl06u95czd4026ahzmjr9stsx4h65kw3dhh60py0m7k6e
+  mnemonic: &quot;&quot;
+  threshold: 0
+  pubkeys: []
+</code></pre>
+
+<p>By default, the <code>...keys add</code> command with account and index set to 0 of <a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki">bip44</a> derivation path is used. To add more than one key account and/or index it must be specified separately in the following way:</p>
+
+<pre><code class="language-js">cyberdcli keys add &lt;your_key2_name&gt; --ledger --account 1 --index 1
+</code></pre>
+
+<p>You don&rsquo;t need to remember which numbers for account and index you&rsquo;ve used, it will be matched to <your_key_name> automatically.</p>
+
+<h2 id="confirm-your-address">Confirm your address</h2>
+
+<p>To make sure you have added everything correctly just run:</p>
+
+<pre><code class="language-js">cyberdcli keys show &lt;key_name&gt; -d
+</code></pre>
+
+<p>It&rsquo;s necessary to confirm that the key on your Ledger matches the one shown in the console.</p>
+
+<h2 id="signing-transactions">Signing transactions</h2>
+
+<p>You are now ready to sign and send transactions. This could be done by using the <code>tx send</code> command. Your Ledger device should be connected and unlocked at this step. Run the following to send some CYB tokens:</p>
+
+<pre><code class="language-js">cyberdcli tx send &lt;from_key_name&gt; &lt;destination_address&gt; &lt;ammount&gt;cyb --chain-id &lt;current_chain_id&gt;
+</code></pre>
+
+<p><code>&lt;from_key_name&gt;</code> is your ledger key name, <code>&lt;destination_address&gt;</code> is the address of the recipient in the following format: <code>cyber1wq7p5qfygxr37vqqufhj5fzwlg55zmm4w0p8sw</code>.
+When prompted with <code>confirm transaction before signing</code>, answer Y. Your Ledger will ask to approve the transaction. Make sure you&rsquo;ll inspect the transaction JSON before signing it. When the transaction is signed on the Ledger, usually, the output will show up in the console.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#ledger-nano-support">Ledger nano Support</a>
+<ul>
+<li><a href="#cyberd-cli-ledger-nano">Cyberd CLI &amp; Ledger Nano</a></li>
+<li><a href="#add-your-ledger-key">Add your Ledger key</a></li>
+<li><a href="#confirm-your-address">Confirm your address</a></li>
+<li><a href="#signing-transactions">Signing transactions</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

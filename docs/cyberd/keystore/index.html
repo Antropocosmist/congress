@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/cyberd/keystore/" />
+<link rel="alternate" href="../../../docs/cyberd/keystore/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/cyberd/keystore/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Keystore
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+  <ul>
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/chaingear/" >
+    
+  
+    
+    
+    Chaingear
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/whitepaper/" >
+    
+  
+    
+    Whitepaper
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/cyb/" >
+    
+  
+    
+    
+    Cyb
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/app-guidelines/" >
+    
+  
+    
+    App Guidelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/cyb/" >
+    
+  
+    
+    Cyb
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/dura/" >
+    
+  
+    
+    Dura
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/web3-vision/" >
+    
+  
+    
+    Web3 Vision
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/keystore/"  class="active">
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="keystore-management">Keystore management</h1>
+
+<h2 id="key-types">Key types</h2>
+
+<p>Key types can be conditionally divided into two groups: <strong>agents</strong> and <strong>validators</strong>.</p>
+
+<p><strong>Agents</strong> keys are used for linking content, sending liquid tokens, delegating, redelegating, and undelegating tokens to validators. Also, withdrawing rewards, voting and creating multisig accounts.</p>
+
+<ul>
+<li><p><code>cyber</code> a.k.a. address. Cyberdcli application key.</p>
+
+<ul>
+<li>Derived from account mnemonic phrase, generated by <code>cyberdcli keys add</code></li>
+<li>e.g. <code>cyber15h6vd5f0wqps26zjlwrc6chah08ryu4hzzdwhc</code></li>
+</ul></li>
+
+<li><p><code>cyberpub</code> the public key of an account address. It is used for generating multisig addresses.</p>
+
+<ul>
+<li>Derived from account mnemonic phrase, generated by <code>cyberdcli keys add</code></li>
+<li>e.g. <code>cyberpub1zcjduc3q7fu03jnlu2xpl75s2nkt7krm6grh4cc5aqth73v0zwmea25wj2hsqhlqzm</code></li>
+</ul></li>
+</ul>
+
+<p>All agents keypairs are stored locally in the <code>PATH_TO_CYBERD/cli/keys</code> folder. You can backup this folder to easily migrate between testnets or machines.</p>
+
+<p><strong>Validators</strong> are actors on the network committing new blocks by submitting their votes. This refers to the node itself, not a single person or a single account. Therefore, the public key here is referring to the nodes public key, not the public key of the agent address.</p>
+
+<ul>
+<li><p><code>cybervaloper</code> validator application-level address. It is associated with a public key <code>cybervalconspub</code>. This is the address used to identify your validator publicly. The private key associated with this address is used to delegate, unbond, claim rewards, and participate in governance. Generated by cyberdcli on the application level. Application keys are associated with a public key prefixed by <code>cyberpub</code> and an address prefixed by cyberd network. Both are derived from account keys generated by cyberdcli keys add.</p>
+
+<ul>
+<li>e.g. <code>cybervaloper1carzvgq3e6y3z5kz5y6gxp3wpy3qdrv928vyah</code></li>
+</ul></li>
+
+<li><p><code>cybervalconspub</code> the public key of node/validator address. The private key associated with this Tendermint PubKey is used to sign prevotes and precommits.</p>
+
+<ul>
+<li>Generated when the node is created</li>
+<li>Get this value with <code>cyberdcli tendermint show-validator</code></li>
+<li>e.g. <code>cybervalconspub1zcjduepq0ms2738680y72v44tfyqm3c9ppduku8fs6sr73fx7m666sjztznqzp2emf</code></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>Note: A validator&rsquo;s operator key is directly tied to an application key, but uses reserved prefixes solely for this purpose: <code>cybervaloper</code> and <code>cybersvaloperpub</code>.</p>
+</blockquote>
+
+<p>A nodes keypair is stored in <code>node_key.json</code> and <code>priv_validator_key.json</code> at <code>PATH_TO_CYBERD/daemon/config</code> folder. You can delete them and restart <code>cyberd</code> if you want to change this keypair. The new pair will be created automatically. Or you can backup it up and insert in the same folder during a new testnet if you want the same nodes pubkey.</p>
+
+<h2 id="generate-keys">Generate keys</h2>
+
+<p>You&rsquo;ll need an account private and public key pair (a.k.a. <code>sk, pk</code> respectively) to be able to receive funds, send txs, bond tx, etc.</p>
+
+<p>To generate a new <em>secp256k1</em> key:</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;account_name&gt;
+</code></pre>
+
+<p>Next, you will have to create a passphrase to protect the key on disk. The output of the above
+the command will contain a <em>seed phrase</em>. It is recommended to save the <em>seed phrase</em> in a safe
+place so that in case you forget the password, you could eventually regenerate the key from
+the seed phrase with the following command:</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;account_name&gt; --recover
+</code></pre>
+
+<p>Also, you can import your ETH account to <code>cyberdcli</code>:</p>
+
+<pre><code class="language-bash">cyberdcli keys add import_private &lt;account_name&gt;
+</code></pre>
+
+<p>by using the ETH private key</p>
+
+<p>&hellip; and Cosmos account by seed phrase:</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;account_name&gt; --recover 
+</code></pre>
+
+<p>cyberdcli provides compatibility of Cosmos and ETH public keys with Cyber addresses.</p>
+
+<p>You can check your application account details by account name:</p>
+
+<pre><code class="language-bash">cyberdcli keys show &lt;account_name&gt;
+</code></pre>
+
+<p>You can see all of your available keys by typing:</p>
+
+<pre><code class="language-bash">cyberdcli keys list
+</code></pre>
+
+<p>View the validator pubkey for your node by typing:</p>
+
+<pre><code class="language-bash">cyberdcli tendermint show-validator
+</code></pre>
+
+<dl>
+<dt>Note that this is the Tendermint signing key, <em>not</em> the operator key you will use in delegation transactions.</dt>
+<dt>::: danger Warning
+We strongly recommend <em>NOT</em> using the same passphrase for multiple keys. The cyberd team and/or the cyber~Congress team will not be responsible for the loss of funds.
+:::</dt>
+</dl>
+
+<p><strong>Important note</strong>: Starting with v.38 cosmos-SDK uses os-native keyring to store all your keys. We&rsquo;ve noticed that in certain cases this does not work well by default (for example if you don&rsquo;t have any GUI installed on your machine). If during the execution of the <code>cyberdcli keys add</code> command you get this type of error:</p>
+
+<pre><code class="language-bash">panic: No such interface 'org.freedesktop.DBus.Properties' on object at path /
+
+goroutine 1 [running]:
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.writeInfo(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x147a6c0, 0xc000f1c780, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:479 +0x38c
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.writeLocalKey(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x147a6c0, 0xc000f1c780, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:465 +0x189
+github.com/cosmos/cosmos-sdk/crypto/keys.baseKeybase.CreateAccount(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x146aa00, 0xc000b15630, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keybase_base.go:171 +0x192
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.CreateAccount(...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:107
+github.com/cosmos/cosmos-sdk/client/keys.RunAddCmd(0xc000f0b400, 0xc000f125f0, 0x1, 0x1, 0x148dcc0, 0xc000aca550, 0xc000ea75c0, 0xc000ae1c08, 0x5e93b7)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/client/keys/add.go:273 +0xa8b
+... etc
+</code></pre>
+
+<p>You will have to use another keyring backend to keep your keys. Here are 2 options: store the files within the cli folder or a <code>pass</code> manager.</p>
+
+<p>Setting the keyring backend to a <strong>local file</strong>:</p>
+
+<p>Execute:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend file
+</code></pre>
+
+<p>As a result you migth see the following: <code>configuration saved to /root/.cybercli/config/config.toml</code></p>
+
+<p>Execute:</p>
+
+<pre><code class="language-bash">cyberdcli config --get keyring-backend
+</code></pre>
+
+<p>The result should be the following:</p>
+
+<pre><code class="language-bash">user@node:~# cyberdcli config --get keyring-backend
+file
+</code></pre>
+
+<p>This means that you&rsquo;ve set your keyring-backend to a local file. <em>Note</em>, in this case, all the keys in your keyring will be encrypted using the same password. If you would like to set up a unique password for each key, you should set a unique <code>--home</code> folder for each key. To do that, just use <code>--home=/&lt;unique_path_to_key_folder&gt;/</code> with setup keyring backend and at all interactions with keys when using cyberdcli:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend file --home=/&lt;unique_path_to_key_folder&gt;/
+cyberdcli keys add &lt;your_second_key_name&gt; --home=/&lt;unique_path_to_key_folder&gt;/
+cyberdcli keys list --home=/&lt;unique_path_to_key_folder&gt;/
+</code></pre>
+
+<p>Set keyring backend to <a href="https://github.com/cosmos/cosmos-sdk/blob/9cce836c08d14dc6836d07164dd964b2b7226f36/crypto/keyring/doc.go#L30"><strong>pass manager</strong></a>:</p>
+
+<p>Pass utility uses a GPG key to encrypt your keys (but again, it uses the same GPG for all the keys). To install and generate your GPG key you should follow <a href="https://www.passwordstore.org/">this guide</a> or this very <a href="http://tuxlabs.com/?p=450">detailed guide</a>. When you&rsquo;ll get your <code>pass</code> set, configure <code>cyberdcli</code> to use it as a keyring backend:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend pass
+</code></pre>
+
+<p>And verify that all set as planned:</p>
+
+<pre><code class="language-bash">cyberdcli config --get keyring-backend
+pass
+</code></pre>
+
+<h2 id="generate-multisig-public-keys">Generate Multisig Public Keys</h2>
+
+<p>You can generate and print a multisig public key by typing:</p>
+
+<pre><code class="language-bash">cyberdcli keys add --multisig=name1,name2,name3[...] --multisig-threshold=K new_key_name
+</code></pre>
+
+<p><code>K</code> is the minimum number of private keys that must sign the
+transactions that carry the address of the public key as signer.</p>
+
+<p>The <code>--multisig</code> flag must contain the name of the public keys that will be combined into a
+public key that will be generated and stored as <code>new_key_name</code> in the local database.
+All names supplied through <code>--multisig</code> must already exist in the local database. Unless
+the flag <code>--nosort</code> is set, the order in which the keys are supplied on the command line
+does not matter, i.e. the following commands generate two identical keys:</p>
+
+<pre><code class="language-bash">cyberdcli keys add --multisig=foo,bar,baz --multisig-threshold=2 multisig_address
+cyberdcli keys add --multisig=baz,foo,bar --multisig-threshold=2 multisig_address
+</code></pre>
+
+<p>Multisig addresses can also be generated on-the-fly and printed by using this command:</p>
+
+<pre><code class="language-bash">cyberdcli keys show --multisig-threshold K name1 name2 name3 [...]
+</code></pre>
+
+<p>For more information regarding how to generate, sign and broadcast transactions with a
+multi-signature account see <a href="./multisig_guide.md">Multisig Guide</a>.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#keystore-management">Keystore management</a>
+<ul>
+<li><a href="#key-types">Key types</a></li>
+<li><a href="#generate-keys">Generate keys</a></li>
+<li><a href="#generate-multisig-public-keys">Generate Multisig Public Keys</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

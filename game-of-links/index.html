@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Game of Links</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="savetheales" />
+
+<link rel="canonical" href="../game-of-links/" />
+<link rel="alternate" href="../game-of-links/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="Game of Links" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/game-of-links/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="Game of Links" />
+<meta name="twitter:creator" content="savetheales" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../highlight/github-gist.css" />
+<link rel="stylesheet" href="../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../img/newlogo.png">
+<link rel="alternate feed" href="../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../asciinema/asciinema-player.js"></script>
+<script src="../highlight/highlight.js"></script>
+
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+  <header class="header-has-logo"  id="stars" >
+        <div class="container cf">
+          <h1 class="pull-left logo margin-bottom">
+            <a href="../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../"><span class='logo-text'>cyber~Congress</span></a>
+          </h1>
+          <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf">
+              <li><a href="../docs/go-cyber/cyberd/"
+                  >Docs</a></li>
+              <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+              <li><a href="../post" >Blog</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+      </header>
+    
+
+  <div class="container">
+
+    
+
+
+    <div class="post">
+      <h1>Game of Links</h1>
+      <p class="date">by savetheales on 2020-05-13</p>
+
+      <p>
+</p>
+
+      
+
+<p>Welcome to the Game of Links!</p>
+
+<h2 id="intro">Intro</h2>
+
+<p>The game is part of the distribution games planned in our <a href="https://ipfs.io/ipfs/QmQ1Vong13MDNxixDyUdjniqqEj8sjuNEBYMyhQU4gQgq3">whitepaper</a>. In this document, we describe the purpose, the rules and the tools that are required to participate in the Game.  The game started with <code>euler-5</code>, which is the technical name of our incentivized testnet that is required for the launch of the <code>cyber</code> network. The Game of Links is going to be held as part of the <code>euler</code> testnets. The game is organized by cyber~Congress. The main goal of the participants is to win as many tokens as possible, from cyber~Congress.</p>
+
+<p>The key idea behind the Game of Links is to establish a starting value of relevance for the knowledge graph. It is crucial for getting quality search results from the inception of the network. All the disciplines are an integral part of the preparation and testing of the network before the launch of the mainnet.</p>
+
+<h2 id="goals">Goals</h2>
+
+<ul>
+<li>To distribute 10% of CYB tokens to the donors who will participate in the takeoff donation round</li>
+<li>To distribute up to 5% of CYB tokens to the participants of the 7 disciplines of the game, depending on how many tokens participants win against cyber~Congress</li>
+<li>To carry out publicly incentivized testing of <a href="https://github.com/cybercongress/go-cyber">go-cyber</a> and <a href="https://github.com/cybercongress/cyber-foundation">cyber~Foundation</a> before the launch of the mainnet</li>
+</ul>
+
+<h2 id="provision">Provision</h2>
+
+<p>The Game of Links starts with the launch of <code>euler-5</code> and ends with a snapshot of the network which will be produced after the grand-finale of the Game! Based on the Genesis snapshot of <code>cyber</code> the network will be computed independently by each validator who will decide to become a part of the Genesis.</p>
+
+<p><img src="timeline.png" alt="timeline" /></p>
+
+<p>The takeoff donation round will start after the <a href="https://cyber.page/governance/2">approval of the governance proposal</a> of the takeoff donation start. It will last until any of the following events will happen:</p>
+
+<ul>
+<li>146 days have passed since the beginning of the takeoff donation round</li>
+<li>300,000 ATOM tokens have been donated</li>
+</ul>
+
+<p>After the end of the takeoff donation round, we will distribute EUL tokens to participants of the takeoff. This will kick-off the final round of the Game of Links.</p>
+
+<p>At this time, key players with significant stakes will have a powerful impact on the results of the Game.</p>
+
+<p>The final round will be played for 21 days after the distribution of EUL tokens.</p>
+
+<h2 id="distribution">Distribution</h2>
+
+<p>The distribution for <code>euler-5</code> in the Genesis file was the following (distribution for <code>euler-6</code> did not change):</p>
+
+<p><img src="euler-5_distribution.png" alt="euler-5-distribution" /></p>
+
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th align="right">Amount of EUL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Takeoff donations</td>
+<td align="right">100,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>Gifts to Ethereum, Cosmos and Urbit communities</td>
+<td align="right">100,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>Euler-4 validators</td>
+<td align="right">15,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>GOL stakers</td>
+<td align="right">15,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>Community pool</td>
+<td align="right">2,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>Test of Thrones in ATOMs (abandoned)</td>
+<td align="right">1,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
+
+<p>The total Genesis supply is 233,000,000,000,000 EULs or 233 TEULs.</p>
+
+<p>GOL tokens are the testing equivalent of THC. The distribution of GOL tokens is the following:</p>
+
+<p><img src="euler-5_GOL_distribution.png" alt="euler-5-GOL-distribution" /></p>
+
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th align="right">Amount of GOL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cyber~Congress</td>
+<td align="right">8,000,000,000,000</td>
+</tr>
+
+<tr>
+<td>test~Auction</td>
+<td align="right">7,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
+
+<p>The total supply of test GOL tokens for the period of the game is 15 TEUL.</p>
+
+<h2 id="how-to-participate">How to participate</h2>
+
+<p>There is no face control, captchas or KYC to join the Game. All you need is a tool for playing and some tokens.</p>
+
+<p>You may join the Game as a:</p>
+
+<ul>
+<li>Hero (validator). <a href="https://github.com/cybercongress/cyberd/blob/0.1.5/docs/run_validator.md">Set up</a> your node and start validating</li>
+<li>Master (user). The builder of the Great Web. Migrate content from web2 to the Great Web or create your own and make it searchable. You can link your content with the <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#using-your-ledger-to-link">help</a> of <a href="https://cyber.page/">cyber.page</a> and a Ledger or with the use of <a href="https://github.com/cybercongress/cyberd">CLI</a></li>
+<li><a href="https://cyber.page/evangelism">Evangelist</a>. Attract other players, donors and become a project ambassador</li>
+<li>Developer. Create cool things and claim your rewards via <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#creating-proposals">spend proposals</a> from the community pool</li>
+</ul>
+
+<h2 id="how-to-get-tokens-and-which-tools-to-use">How to get tokens and which tools to use?</h2>
+
+<p>There are several ways to get tokens and several tools that you can use:</p>
+
+<ul>
+<li><a href="https://cyber.page/gift">Gifts</a>. There are 100 TEULs allocated as a gift to the Cosmos, Ethereum and Urbit communities. You can check your balance using the <a href="https://cyber.page/gift">cyber.page</a>. For example, this is <a href="https://etherscan.io/address/0xab5801a7d398351b8be11c439e05c5b3259aec9b">Vitalik&rsquo;s gift</a>.</li>
+<li><a href="https://cyber.page/gol/takeoff">Takeoff round</a>. You can get tokens if you will participate in the takeoff donation round.</li>
+<li><a href="https://cybercongress.ai/how-to-get-eul-tokens-if-you-have-none/">Faucets</a>. We want to test the production of the auction app during GoL and this is a great opportunity for creating a faucet based on this app. You can obtain GOL tokens and claim EUL tokens to participate in the game. We expect a low price valuation for GOL, so you can fill your stake with Szhabos (1 millionth of an ETH) and uAtoms (1 millionth of an ATOM).</li>
+<li><a href="https://cybercongress.ai/docs/cyberd/run_validator/">Be a validator</a>. You can get tokens via launching a validator node.</li>
+</ul>
+
+<blockquote>
+<p><strong>! Important</strong></p>
+</blockquote>
+
+<p>The <code>euler</code> testnets will use 2 special testnet tokens. One is called <code>EUL</code>, which is the equivalent for the <code>CYB</code> mainnet token. And the second is named <code>GOL</code>, which is an equivalent for the mainnet <code>THC</code> governance token.</p>
+
+<p>EUL tokens have little value (in regards to price value). Their main purpose is to serve as the basis for reward calculation during the Game of Links. GOL tokens also have no significant value in terms of price. They will allow gaining EUL tokens during the game <a href="https://cyber.page/gol/faucet/vest">if vested</a>. Non-vested GOL tokens do not have any value at all.</p>
+
+<p>GOL tokens serve (1) as a means to provide incentivized testing of the Ethereum contracts, and (2) as a spam protection mechanism for the faucet.</p>
+
+<p>DO NOT spend a significant amount of funds buying GOL during test~Auction and/or EUL over the counter. GOL tokens will be burned after the <code>euler</code> testnets are over. All accounts in the <code>euler</code> experimental networks series will be reset. All ETH and ATOM sent to the faucet during the Game of Links are donated to cyber~Congress.</p>
+
+<p>To remove any confusion, here is a comparison table of the different naming during the test and the mainnet:</p>
+
+<table>
+<thead>
+<tr>
+<th>During <code>euler</code> testnets</th>
+<th>During <code>cyber</code> mainnet</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>test~Auction</td>
+<td>cyber~Auction</td>
+</tr>
+
+<tr>
+<td>GOL token</td>
+<td>THC token</td>
+</tr>
+
+<tr>
+<td>EUL token</td>
+<td>CYB token</td>
+</tr>
+
+<tr>
+<td>Takeoff donations</td>
+<td>Not applicable</td>
+</tr>
+</tbody>
+</table>
+
+<p>These measures will help to reduce the risks associated with the use of Aragon contracts, Aragon plugins, cyberd software and the multisig accounts involved. Thanks for understanding.</p>
+
+<h2 id="faucets">Faucets</h2>
+
+<p>A <a href="https://cyber.page/gol/faucet">faucet</a> is up and running for the duration of the Game of Links and the test~Auction. It will help us to test the contracts before the launch of the mainnet and make it easier for participants without tokens or with a small number of tokens to join the Game. We&rsquo;ve allocated 7 TGOL for the test~Auction. During this period Etherians can donate their native tokens. After that EULs and GOLs will be distributed.</p>
+
+<h2 id="takeoff-donations">Takeoff donations</h2>
+
+<p>The <a href="https://cyber.page/gol/takeoff">takeoff donations</a> have 3 key goals:</p>
+
+<ul>
+<li>Bootstrapping the genesis validator set</li>
+<li>Defining the allocation for cyber~Congress (team, inventors, fund and seed donors)</li>
+<li>Defining the allocation for the participants of the Game of Links</li>
+</ul>
+
+<p>The results of the Game and the allocation are significantly influenced by the results of the takeoff donations.</p>
+
+<p>All CYBtokens that remain from the Takeoff, are allocated to the community pool at the end of the game.</p>
+
+<p>100 TCYBs will be distributed to donors proportionally per the donated ATOMs and the order of donation transaction. The distribution function is:</p>
+
+<pre><code>f(x) = 40 * x + 1000
+where f(x) - TCYB price in ATOMs, and x is amount of TCYBs tokens won
+</code></pre>
+
+<p>Independently of the donated amount, 100 TEULs will be distributed to all takeoff donors after the takeoff round will end, proportionally per the donated ATOMs. These EULS are to be used during the 21-day final of the Game, in the Game of Links.</p>
+
+<h2 id="disciplines">Disciplines</h2>
+
+<p>There are seven disciplines to participate in the Game of Links, which are subdivided further into 2 different types:</p>
+
+<p>Dependent on takeoff donations:</p>
+
+<ul>
+<li>The relevance of links submitted (the higher the rank of the content and earlier you cyberlink, the better)</li>
+<li>The bandwidth load of every participant (the more you link, the better)</li>
+<li>Life summary of every validator (the longer your uptime is, the better)</li>
+<li>The amount delegated to each validator (the more a validator is delegated, the better)</li>
+</ul>
+
+<p>Independent of takeoff donations:</p>
+
+<ul>
+<li>Full validator set (the more validators there are, the better)</li>
+<li>Community pool (experiment and participate in governance)</li>
+<li><code>euler-4</code> validator rewards (rewards distributed to validators for the last testnet)</li>
+</ul>
+
+<p>The following criteria are applied for the allocation of Game of Links:</p>
+
+<p><img src="GOL_distribution.png" alt="game-of-links-distribution" /></p>
+
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th align="right">Amount CYB</th>
+<th align="right">%, of mainnet supply</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>takeoff donations</td>
+<td align="right">100,000,000,000,000</td>
+<td align="right">10%</td>
+</tr>
+
+<tr>
+<td><em>disciplines depends on takeoff</em></td>
+<td align="right">up to</td>
+<td align="right"></td>
+</tr>
+
+<tr>
+<td>relevance</td>
+<td align="right">20,000,000,000,000</td>
+<td align="right">2%</td>
+</tr>
+
+<tr>
+<td>load</td>
+<td align="right">10,000,000,000,000</td>
+<td align="right">1%</td>
+</tr>
+
+<tr>
+<td>delegation</td>
+<td align="right">5,000,000,000,000</td>
+<td align="right">0.5%</td>
+</tr>
+
+<tr>
+<td>lifetime</td>
+<td align="right">3,000,000,000,000</td>
+<td align="right">0.3%</td>
+</tr>
+
+<tr>
+<td><em>disciplines independs on takeoff</em></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+
+<tr>
+<td>full validator set</td>
+<td align="right">5,000,000,000,000</td>
+<td align="right">0.5%</td>
+</tr>
+
+<tr>
+<td><code>euler-4</code> rewards</td>
+<td align="right">5,000,000,000,000</td>
+<td align="right">0.5%</td>
+</tr>
+
+<tr>
+<td>community pool</td>
+<td align="right">2,000,000,000,000</td>
+<td align="right">0.2%</td>
+</tr>
+</tbody>
+</table>
+
+<p>There are no limits for participating. You can set up your validator node to get a reward for validators uptime or you can link CIDs and load network bandwidth. You can create any promotion around your validator and collect stakes from users. You can do all of those things together. Simply play and monitor the results.</p>
+
+<p>There are 4 disciplines depends on the number of donated ATOMs. If the 300,000 ATOM donation cap will not be reached, the remaining CYB tokens from the disciplines will be distributed back to cyber~Congress. The logic is the following: the more has been donated, the more rewards the participants acquire, the less CYB tokens are allocated back to cyber~Congress.</p>
+
+<p><img src="disc_distr.png" alt="disc_distr" /></p>
+
+<p>Participants that want to get CYB tokens in the Genesis file of the mainnet but cannot play, can donate ATOMs. Therefore, increasing the percentage of payouts to other participants.</p>
+
+<p>In case of the discipline do not play out or play out partially, the remaining tokens will be allocated back to the cyber~Congress multisig.</p>
+
+<h2 id="relevance">Relevance</h2>
+
+<p>This is the most difficult discipline of the Game. Users may link everything that you believe is important for the future of the web.</p>
+
+<p>Each CID has a rank with a certain weight (depending on the dynamic parameters outlined in the whitepaper). In the end, those ranks get ranged according to their weight. The higher the better.</p>
+
+<p>There are up to 20 TCYBs allocated for the top 1000 CIDs and the top 10 agents that linked those CIDs.</p>
+
+<p>CYB tokens will be distributed to the top 1000 CID proportionally to their ranks.</p>
+
+<p>In the case that 300,000 ATOMs are donated, rank ratios of the top 1000 CIDs and the sum of all of their ranks, are multiplied by max CYBs allocated for the relevance discipline.</p>
+
+<p>Thereafter, these rewards will be distributed between the 10 Masters in the order of their link submission, in accordance to the <a href="https://en.wikipedia.org/wiki/Power_law">power law</a>:</p>
+
+<p align="center"><img src="4550a64f501a3fe4b8068075dc76b2b7.svg?invert_in_darkmode&sanitize=true" align=middle width=141.94894559999997pt height=47.35857885pt/></p>
+
+<p>This way we can calculate allocation for any of the CIDs in the top using <a href="https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant">Euler&rsquo;s method</a> for the sum of harmonic series:</p>
+
+<p align="center"><img src="709b6ed38f7429c7a239d504928eb823.svg?invert_in_darkmode&sanitize=true" align=middle width=174.73419644999998pt height=47.35857885pt/></p>
+<p align="center"><img src="089376374904beb77e4bcee2c1e21c4d.svg?invert_in_darkmode&sanitize=true" align=middle width=224.02992644999998pt height=59.86724205pt/></p>
+
+<p>Where <img src="11c596de17c342edeed29f489aa4b274.svg?invert_in_darkmode&sanitize=true" align=middle width=9.423880949999988pt height=14.15524440000002pt/> is Euler–Mascheroni constant =0.57721&hellip;, <img src="6631c51e2108c8128d4e1b3dd8319d52.svg?invert_in_darkmode&sanitize=true" align=middle width=47.23886309999999pt height=27.77565449999998pt/> .</p>
+
+<blockquote>
+<p>Please note! Only retrievable CIDs take part in the Game. We assume that Masters should also be content providers and responsible for content availability. Please make sure that your content is pinned and responding. Otherwise, the unreachable CIDs will be excluded and rewards will be distributed between <code>1000 - N</code> CIDs, where N is the number of unreachable CIDs.</p>
+</blockquote>
+
+<h2 id="load">Load</h2>
+
+<p>According to our resource credits model, there are no transactional fees. We use bandwidth. The value of the users&rsquo; bandwidth is the ability of the user to send messages, make links and transact.</p>
+
+<p>Each message type has an assigned bandwidth cost. For this discipline, we&rsquo;re calculating  ONLY the bandwidth spent on linking.</p>
+
+<p>All the bandwidth spending data is available at the <code>account_bandwidth?address=</code> RPC. After the game, 6 TCYBs will be distributed to players addresses according to their weight coefficient of the spent bandwidth. In other words, per how much bandwidth they have spent on linking during the Game. The bandwidth decreases if the network has a low load and increases if the load is high, between 0.01 and inf. This means that you can spend the same amount of bandwidth for 1000 links in the load of the network is low and the same situation can apply to 10 links. The bandwidth spent on linking is called Karma.</p>
+
+<p>The network has a desirable bandwidth of 16000 blocks (~24 h). If the current bandwidth is equal to this value it means everything is normal and the multiplier parameter is 1.00. In all other cases, the multiplier is corrected dependent on the upload or the download of the network.</p>
+
+<p>The value of the multiplier is recalculated every 10 blocks (~1 minute) according to the load of the network and has a 16000 blocks (~24 h) window. You can always find it on the <a href="https://cyber.page/gol/">Game monitors</a>.</p>
+
+<p>A users bandwidth depends on their stake:</p>
+
+<p align="center"><img src="4042b9084b919579e8b53b1a534c48c5.svg?invert_in_darkmode&sanitize=true" align=middle width=364.6570521pt height=37.0084374pt/></p>
+
+<p>The genesis <img src="6c96214df751338517023f80ff173b61.svg?invert_in_darkmode&sanitize=true" align=middle width=129.76865549999997pt height=22.831056599999986pt/> params are available in the <a href="https://github.com/cybercongress/launch-kit/tree/0.1.0/params">launch-kit</a> repo.</p>
+
+<p>Users rewards, in case 300,000 ATOMs have been donated, are calculated in the following way: the ratio of bandwidth spent by the user for cyberlinking and the sum of all spent bandwidth for cyberlinking multiplied by the max CYBs allocated for the load discipline.</p>
+
+<h2 id="lifetime">Lifetime</h2>
+
+<p>The easiest discipline. You just need to set up your validator node and monitor its lifetime. The lifetime means blocks pre-commits of a validator.</p>
+
+<blockquote>
+<p>Important! Your validator should be in the set of active validators! Watch your stake!</p>
+</blockquote>
+
+<p>The rewards are calculated as the ratio of the validator&rsquo;s precommits and the sum of all the precommits multiplied by max CYBs allocated for the lifetime discipline.</p>
+
+<h2 id="delegation">Delegation</h2>
+
+<p>Amount of the delegated CYB tokens to each validator. The purpose of this discipline is to spread information about the gift. The logic is the following, the more information you spread, the more is delegated to you. But, of course, this is not enough. You also need to earn your validators reputation by having an efficient infrastructure and providing constant lifetime. This works as a promotion of your services to the early community. We&rsquo;ll allocate up to 5 TCYB, proportionally to the staked tokens on validators on the last block of the Game. If 300,000 ATOMs have been donated, every validator will get:</p>
+
+<p align="center"><img src="ac99c54d5d13c7cc61514088045eca48.svg?invert_in_darkmode&sanitize=true" align=middle width=310.95714705pt height=36.2778141pt/></p>
+
+<h2 id="full-validator-set">Full validator set</h2>
+
+<p>If the set of validators will increase to or is equal or over 100, and this number of validators can last for 10,000 blocks, we will allocate an additional 2 TCYB to validators who took part in this discipline and were active in the 10,000 blocks period. If the number of validators will increase to or is over 146, under the same conditions we will allocate an additional 3 TCYB. The rewards in that discipline will be distributed to validators proportionally to their pre-commits from the CURRENT network start, up until the discipline is complete.</p>
+
+<h2 id="community-pool">Community pool</h2>
+
+<p>2 TCYB are allocated to the community pool within the <code>cyber</code> network. During the euler testnets, we expect some experiments with governance from the community. All of the governance decisions of the community pool spend during the testnet, will be migrated to the mainnet. There can be multiple examples of claiming rewards in this discipline.  Development of features, explorers, improvements to the ranking algorithm. Other things can be evangelism or marketing tasks, like posting, user involvement, guides and so on. Finally, this can be, community building, like: meetups, online meetings, dev meetings, conferences, etc. Please note, that following the <a href="https://cyber.page/governance/4">OBEP governance propsal</a>, 1 TCYB is allocated to the evangelism program.</p>
+
+<h2 id="euler-4-rewards"><code>euler-4</code> rewards</h2>
+
+<p>A thank you to our early validators for helping to test and secure the <code>euler-4</code> testnet. They have kept their nodes running for a year for a Greater future.</p>
+
+<h2 id="crisis-protocol">Crisis protocol</h2>
+
+<p>We can not guarantee that everything will go as expected. The software can be vulnerable. If anything goes wrong, cyber/~Congress as the organiser of the game, <strong>has the full power</strong> of deciding whether the game must be restarted <strong>without any rewards</strong> or restarted with <strong>partial rewards</strong>, depending on the circumstances. In the case, such a circumstance shall arise we are going to count with community opinions.</p>
+
+<p>Please read the <a href="https://github.com/cybercongress/launch-kit/blob/0.1.0/README.md">launch protocol</a> very carefully. It defines the rules for fault handling. We define 2 danger zones with probabilities to unexpected behaviour and one zone as an intersection of the defined zones:</p>
+
+<ul>
+<li>Network running</li>
+<li>Contracts running</li>
+<li>The intersection of the two above</li>
+</ul>
+
+<p>In case anything goes wrong, we&rsquo;ve prepared a crisis protocol.</p>
+
+<p>If the network will fail:</p>
+
+<ol>
+<li>Stop the contracts (claim app)</li>
+<li>Save current <code>euler</code> snapshot</li>
+<li>Relaunch next <code>euler</code> with previous <code>euler</code> genesis.json</li>
+<li>Start the contracts (claim app)</li>
+</ol>
+
+<p>If the contracts will fail:</p>
+
+<ol>
+<li>Stop the contracts (claim app)</li>
+<li>Pool bounty</li>
+<li>Redeploy the contracts (claim app)</li>
+<li>Continue the auction</li>
+</ol>
+
+<p>If everything gets fucked-up from both ends, then:</p>
+
+<ol>
+<li>Stop the contracts (claim app)</li>
+<li>Save current <code>euler</code> snapshot</li>
+<li>One week pause for community discussions. And for cyber~Congress to make a decision</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>At first glance, the <code>euler</code> distribution and the Game rules look pretty complex. This is not true.</p>
+
+<p>A good UI of the <a href="https://cyber.page/gol">cyber.page</a> app is intended to make playing easy and clear. We expect the <code>cyber</code> network to launch with a loaded knowledge graph and a nice distribution curve. The Game will help to achieve this.</p>
+
+<p>This is a good chance for everyone to become an early adopter of the #fuckgoogle philosophy and the Great Web.</p>
+
+<p>Do it. Cyber it.</p>
+
+<h2 id="updates">Updates</h2>
+
+<p>On the 05.05.2020, following the initial take-off, we submitted a <a href="https://cyber.page/governance/5">governance proposal</a> for a new takeoff and a distribution change. The new distribution is beneficial to both the current stakeholders and future participants.</p>
+
+<p>On the 24.02.2020, following a blocking error with bandwidth limiting bug, we have <a href="https://cybercongress.ai/euler-6-migration/">realesed a post</a>, describing the migration from <code>euler-5</code> &ndash;&gt; <code>euler-6</code> and the need to activate the crisis protocol for the Game of Links (GoL). The instruments we had did not allow us to resolve the problem on-chain, but since then the bug has been fixed in the new version of go-cyber. Players that will join the network from <code>euler-6</code> are not required to take any actions. Players that participated in the game starting from <code>euler-5</code>m should <a href="https://cybercongress.ai/how-to-import-cyberlinks-from-euler-5-to-euler-6/">follow this guide</a> to re-link cyberlinks.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="https://ipfs.io/ipfs/QmQ1Vong13MDNxixDyUdjniqqEj8sjuNEBYMyhQU4gQgq3">The cyber whitepaper</a></li>
+<li><a href="https://github.com/cybercongress/go-cyber">Cyber implementation on Cosmos-SDK</a></li>
+<li><a href="https://github.com/cybercongress/aragon-claim-app">Aragon claim app</a></li>
+<li><a href="https://cyber.page/gol">Cyber web app</a></li>
+<li><a href="https://github.com/cybercongress/launch-kit">Launch kit repo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Power_law">Power law on wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant">Euler&rsquo;s method</a></li>
+<li><a href="https://github.com/cybercongress/launch-kit/tree/0.1.0/params">Chain params</a></li>
+<li><a href="https://github.com/cybercongress/launch-kit/blob/0.1.0/README.md">The launch protocol</a></li>
+<li><a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md">Homestead doc</a></li>
+<li><a href="https://cybercongress.ai/playing-gol/">Playing GoL</a></li>
+<li><a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Gift%20FAQ%20and%20general%20gift%20information.md">Gift FAQ</a></li>
+</ol>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<ul>
+<li>@serejandmyself</li>
+<li>@xhipster</li>
+</ul>
+
+
+      
+          <h2 id="comments">Comments</h2>
+          <div id='discourse-comments'></div>
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
+              discourseEmbedUrl: 'https://ipfs.io/blog/game-of-links' };
+              if (window.location.hostname === 'blog.ipfs.io') {
+                (function() {
+                  var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                  d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+              } else {
+                 
+                 
+                 document.getElementById('comments').style.display = 'none';
+                 document.getElementById('discourse-comments').style.display = 'none';
+              }
+          </script>
+      
+    </div>
+  </div> 
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

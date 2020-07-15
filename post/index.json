@@ -1,0 +1,28 @@
+{
+    "posts" : [
+        {
+            "title" : "Darwin upgrade",
+            "date" : "14 July 2020",
+            "url" : "/darwin-upgrade/",
+            "author" : "litvintech"
+        },
+        {
+            "title" : "euler~Foundation, part 1",
+            "date" : "30 June 2020",
+            "url" : "/euler-foundation-1/",
+            "author" : "litvintech, serejandmyself"
+        },
+        {
+            "title" : "Manifest",
+            "date" : "21 May 2020",
+            "url" : "/manifest/",
+            "author" : "xhsipter, serejandmyself"
+        },
+        {
+            "title" : "Takeoff Proposal to Cosmos",
+            "date" : "21 May 2020",
+            "url" : "/cosmos-takeoff-proposal/",
+            "author" : "serejandmyself, xhsipter"
+        }
+        ]
+}

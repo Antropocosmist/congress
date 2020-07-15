@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/go-cyber/multisig_guide/" />
+<link rel="alternate" href="../../../docs/go-cyber/multisig_guide/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/go-cyber/multisig_guide/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Multisig Guide
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2fgo-cyber\2fmultisig_guide\2f "] {
+      color: #36d6ae;
+  }
+  </style>
+
+<ul>
+<li><a href="../../../docs/go-cyber/cyberd/">Whitepaper</a></li>
+<li>Usage:
+
+<ul>
+<li><a href="../../../docs/go-cyber/run_validator/">Run the validator</a></li>
+<li><a href="../../../docs/go-cyber/supported_gpu_list/">Supported GPUs list</a></li>
+<li><a href="../../../docs/go-cyber/ultimate-commands-guide/">CLI guide</a></li>
+<li><a href="../../../docs/go-cyber/get_cyb/">Get EUL</a></li>
+<li><a href="../../../docs/go-cyber/port_forwarding_guide/">Port forwarding</a></li>
+<li><a href="../../../docs/go-cyber/cyberd_ledger_guide/">Cyberd Ledger guide</a></li>
+<li><a href="../../../docs/go-cyber/multisig_guide/">Multisig guide</a></li>
+<li><a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/">Run validator with Tendermint and Ledger</a></li>
+<li><a href="../../../docs/go-cyber/setup_cyberd_configuration/">Set up config.toml in the right way</a></li>
+</ul></li>
+<li>Dev environment:
+
+<ul>
+<li><a href="../../../docs/go-cyber/setup_dev_env/">Setup development environment</a></li>
+</ul></li>
+<li>Specs:
+
+<ul>
+<li><a href="../../../docs/go-cyber/rpc/">RPC</a></li>
+<li><a href="../../../docs/go-cyber/keystore/">Keystore</a></li>
+</ul></li>
+<li><a href="../../../docs/go-cyber/changelog/">CHANGELOG</a></li>
+<li><a href="../../../docs/go-cyber/contributing/">CONTRIBUTING</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="a-guide-for-creating-a-2-of-3-multisig-account-and-sending-transactions">A guide for creating a 2 of 3 multisig account and sending transactions</h1>
+
+<p>To follow this guide you&rsquo;ll need <code>cyberdcli</code> installed and connected to any cyberd node (refer to our cli <a href="https://cybercongress.ai/docs/cyberd/ultimate-commands-guide/">guide</a>).
+A reminder: this guide covers all types of transactions, not only send transactions. This guide is also relevant for Cosmos Hub Gaiacli users, except for the bandwidth params, in Cosmos we pay a fee using tokens.</p>
+
+<p>Do not forget about the <code>--chain-id</code> flag in <code>cyberd</code>, and in the <code>Cosmos Hub</code> networks.
+You can always get the current <code>&lt;chain-id&gt;</code> in the master branch of the <a href="https://github.com/cybercongress/go-cyber">repository</a>.</p>
+
+<h2 id="creating-a-multisig">Creating a multisig</h2>
+
+<p>The multisig account creation and sending transactions are simple and clear but can be a little long.</p>
+
+<ol>
+<li>Import or create a thresholder accounts for multisig:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli keys add test1
+cyberdcli keys add test2
+</code></pre>
+
+<ol>
+<li>Add pubkeys of remote thresholder accounts:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli keys add test3 --pubkey=&lt;thresholder_pub_key&gt;
+</code></pre>
+
+<p>We now have 3 accounts for multisig account generating:
+<code>test1</code> and <code>test2</code> on a local machine that we have access to.
+<code>test3</code> from a remote thresholder that we do not have access to.
+All the created and imported accounts can be checked with:</p>
+
+<pre><code class="language-bash">cyberdcli keys list
+</code></pre>
+
+<ol>
+<li>Now, we can create and test the 2-of-3 multisig account, named for example: <code>multitest1</code> with keys <code>test1</code>,<code>test2</code> on a local machine and <code>test3</code> on a remote thresholder:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli keys add multitest1 --multisig=test1,test2,test3 --multisig-threshold 2
+</code></pre>
+
+<ol>
+<li>You should top up the balance of your multisig account. Make sure that you have enough bandwidth to execute transactions later.</li>
+</ol>
+
+<h2 id="spending-out-of-a-multisig-account">Spending out of a multisig account</h2>
+
+<ol>
+<li>Create an unsigned transaction from the multisig account and store it in the <code>unsigned.json</code> file:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx send &lt;recipient_address&gt; &lt;amount&gt;cyb --from=&lt;multisig_address&gt; --chain-id=&lt;chain_id&gt; --generate-only &gt; unsigned.json
+</code></pre>
+
+<ol>
+<li>Sign this transaction with the following command and then store the signed file in <code>sign1.json</code>:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx sign unsigned.json --multisig=&lt;multisig_address&gt; --from=&lt;your_account_name&gt; --output-document sign1.json --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<ol>
+<li>You need to send the obtained file to a remote thresholders for signing. You can see the content of the file containing the transaction with:</li>
+</ol>
+
+<pre><code class="language-bash">cat unsigned.json
+</code></pre>
+
+<p>You may now copy the content that is convenient to your <code>.json</code> file and send it.</p>
+
+<ol>
+<li><p>You should also sign the remote thresholder, just like you did two steps above, and send your signed file back.
+For example <code>sign2.json</code></p></li>
+
+<li><p>Copy the signed file from the remote thresholder into your cli home directory with the following command:</p></li>
+</ol>
+
+<pre><code class="language-bash">cp sign2.json $HOME/.cyberdcli
+</code></pre>
+
+<p>Your cli-home folder should content 3 <code>.json</code> files:
+<code>unsigned.json</code>, <code>sign1.json</code>, and <code>sign2.json</code> (at least). Those are the necessary and sufficient conditions, because we&rsquo;ve set up a 2-out-of 3 multisig account.</p>
+
+<ol>
+<li>Generate a multisig transaction with all of the signatures:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx multisign unsigned.json multitest1 sign1.json sign2.json --chain-id=&lt;chain_id&gt; &gt; signed.json
+</code></pre>
+
+<ol>
+<li>Finally, we need to broadcast this transaction to the network:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx broadcast signed.json --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>If the multisig account has enough bandwidth, the transaction should be broadcasted to the network.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#a-guide-for-creating-a-2-of-3-multisig-account-and-sending-transactions">A guide for creating a 2 of 3 multisig account and sending transactions</a>
+<ul>
+<li><a href="#creating-a-multisig">Creating a multisig</a></li>
+<li><a href="#spending-out-of-a-multisig-account">Spending out of a multisig account</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

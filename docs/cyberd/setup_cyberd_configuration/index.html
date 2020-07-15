@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/cyberd/setup_cyberd_configuration/" />
+<link rel="alternate" href="../../../docs/cyberd/setup_cyberd_configuration/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/cyberd/setup_cyberd_configuration/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Setup Cyberd Configuration
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+  <ul>
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/chaingear/" >
+    
+  
+    
+    
+    Chaingear
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/whitepaper/" >
+    
+  
+    
+    Whitepaper
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/cyb/" >
+    
+  
+    
+    
+    Cyb
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/app-guidelines/" >
+    
+  
+    
+    App Guidelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/cyb/" >
+    
+  
+    
+    Cyb
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/dura/" >
+    
+  
+    
+    Dura
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/web3-vision/" >
+    
+  
+    
+    Web3 Vision
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_cyberd_configuration/"  class="active">
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="setup-config-toml">Setup config.toml</h1>
+
+<p>Correct configuration is one of the main keys to consistent and proper functioning of your node no matter if it is a validator or a sentinel/service node.</p>
+
+<p>Throughout this document, we will check all the key points of the <code>config.toml</code> file and explain how to configure them for all use-cases.</p>
+
+<p>We will operate a basic configuration file (according to the number of the line in the actual file), generated after the initialization of cyber daemon and typically located inside <code>$HOME/.cyberd/config directory</code>.</p>
+
+<blockquote>
+<p>All changes made to the <code>config.toml</code> file, require to restart cyberd to take effect!</p>
+</blockquote>
+
+<h2 id="port-address-configuration">Port / Address configuration</h2>
+
+<h3 id="rpc-port">RPC port</h3>
+
+<p>First of all, let&rsquo;s look through the ports cyberd uses to communicate with the outside world. On <em>line 84</em> the specified port is used for an RPC server (TCP and UNIX websocket connections):</p>
+
+<pre><code class="language-bash"># TCP or UNIX socket address for the RPC server to listen on
+laddr = &quot;tcp://127.0.0.1:26657&quot;
+</code></pre>
+
+<p>After the node starts the RPC server provides endpoints to check chain/node parameters, accepts $POST transactions and so on. It can be opened locally using your favourite browser via: <code>http://localhost:26657</code>.</p>
+
+<ul>
+<li>We do not recommend a validator node to open this port to the outside world, as it may allow anyone to produce transactions using your node and allows DOS attacks (you don&rsquo;t want your validator attacked, right?). So let&rsquo;s leave it like this:</li>
+</ul>
+
+<pre><code class="language-bash">laddr = &quot;tcp://127.0.0.1:26657&quot;
+</code></pre>
+
+<ul>
+<li>For Sentinel nodes this should be kept the same as for validators:</li>
+</ul>
+
+<pre><code class="language-bash">laddr = &quot;tcp://127.0.0.1:26657&quot;
+</code></pre>
+
+<ul>
+<li>For Service nodes, when use cases include remote access to the RPC for yourself or for your great service, it is allowable to expose it to the outside by using the following values:</li>
+</ul>
+
+<pre><code class="language-bash">laddr = &quot;tcp://0.0.0.0:26657&quot;
+</code></pre>
+
+<p>If you would like to make the RPC server respond on a different port, you may change this value to whatever you&rsquo;d like (just make sure it will not cross with any of the other services), for example, to change it to <code>9588</code> use:</p>
+
+<pre><code class="language-bash"># TCP or UNIX socket address for the RPC server to listen on
+laddr = &quot;tcp://0.0.0.0:9588&quot;
+</code></pre>
+
+<h3 id="cyberd-communication-port">Cyberd communication port</h3>
+
+<p>On <em>line 163</em> we can find the following:</p>
+
+<pre><code class="language-bash"># Address to listen for incoming connections
+laddr = &quot;tcp://0.0.0.0:26656&quot;
+</code></pre>
+
+<p>This is the way the node communicates with other nodes in the chain. For all possible cases(<strong>Validator, Sentinel, Service</strong>) leave it as default, bound to  <code>0.0.0.0</code>. And if you need to change the port number to something different like <code>35622</code> just use:</p>
+
+<pre><code class="language-bash">laddr = &quot;tcp://0.0.0.0:35622&quot;
+</code></pre>
+
+<p>If changed, your node peer address would be changed accordingly: <code>75e8f44072b0dd598dfa95aaf9b5f2c60f956819@your_external_ip:35622</code>.</p>
+
+<h3 id="prometheus-collectors-port">Prometheus collectors port</h3>
+
+<p>On <em>line 325</em> the port for Prometheus monitoring service is located:</p>
+
+<pre><code class="language-bash"># Address to listen for Prometheus collector(s) connections
+prometheus_listen_addr = &quot;:26660&quot;
+</code></pre>
+
+<p>It is useful if you want to monitor remotely the condition of your node using the <a href="https://prometheus.io/">Prometheus</a> metrics collector service and could be changed to whatever you like <code>23456</code>:</p>
+
+<pre><code class="language-bash">prometheus_listen_addr = &quot;:23456&quot;
+</code></pre>
+
+<p>Don&rsquo;t forget to enable Prometheus metrics by changing to <code>true</code> on <em>line 322</em>, if needed:</p>
+
+<pre><code class="language-bash"># When true, Prometheus metrics are served under /metrics on
+# PrometheusListenAddr.
+# Check out the documentation for the list of available metrics.
+prometheus = true
+</code></pre>
+
+<h3 id="external-address">External address</h3>
+
+<p>On <em>line 169</em> you should find the following:</p>
+
+<pre><code class="language-bash"># Address to advertise to peers for them to dial
+# If empty, will use the same port as the laddr,
+# and will introspect on the listener or use UPnP
+# to figure out the address.
+external_address = &quot;&quot;
+</code></pre>
+
+<p>This line implies specifying your external IP address, which means the presence of a static external address at your network connection. If you don&rsquo;t have one, just skip it.</p>
+
+<ul>
+<li>For Validator nodes, you may skip it, until you have <strong>enough private peers</strong> to get synced with. Otherwise, you have to specify your external static IP to improve peer discovery for your node. Also, don&rsquo;t forget to change the port according to <em>line <a href="#cyberd-communication-port">163</a></em>:</li>
+</ul>
+
+<pre><code class="language-bash">external_address = &quot;tcp://&lt;your_external_static_ip&gt;:26656&quot;
+</code></pre>
+
+<ul>
+<li>For Sentinel nodes it is a good idea to specify the IP for better peer discovery:</li>
+</ul>
+
+<pre><code class="language-bash">external_address = &quot;tcp://&lt;your_external_static_ip&gt;:26656&quot;
+</code></pre>
+
+<ul>
+<li>For Servie nodes this setting can be the same as for Sentinel nodes:</li>
+</ul>
+
+<pre><code class="language-bash">external_address = &quot;tcp://&lt;your_external_static_ip&gt;:26656&quot;
+</code></pre>
+
+<p>And again, all of the above settings apply to the cases when <strong>STATIC EXTERNAL IP</strong> is available.</p>
+
+<h3 id="allow-duplicated-ip-s">Allow duplicated IP&rsquo;s</h3>
+
+<p><em>Line 224</em> of the config.toml holds the following:</p>
+
+<pre><code class="language-bash"># Toggle to disable guard against peers connecting from the same ip.
+allow_duplicate_ip = false
+</code></pre>
+
+<p>This variable configures the possibility for different peers to be connected from the same IP. Lets imagine a situation where you run 2 nodes (lets say that the node ID of the first one is: <code>75e8f44072b0dd598dfa95aaf9b5f2c60f956819</code> and the second one is: <code>d0518ce9881a4b0c5872e5e9b7c4ea8d760dad3f</code>) on one internet provider, with an external IP of 92.23.45.123. In this case, all other nodes in the network with <code>allow_duplicate_ip = false</code> will see attempts to connect from peers <code>d0518ce9881a4b0c5872e5e9b7c4ea8d760dad3f@92.23.45.123:26656</code> and <code>75e8f44072b0dd598dfa95aaf9b5f2c60f956819@92.23.45.123:36656</code> and will block the one which comes last because the originating IP address is the same for both nodes. If this case applies to you, change this setting to the following:</p>
+
+<pre><code class="language-bash"># Toggle to disable guard against peers connecting from the same ip.
+allow_duplicate_ip = true
+</code></pre>
+
+<h2 id="p2p-configuration">P2P configuration</h2>
+
+<h3 id="seed-nodes">Seed nodes</h3>
+
+<p>On <em>line 172</em> of the config.toml we see the following:</p>
+
+<pre><code class="language-bash"># Comma separated list of seed nodes to connect to
+seeds = &quot;&quot;
+</code></pre>
+
+<p>This line is dedicated to the list of seed nodes you want to establish a connection with. To get seed nodes addresses take a look at our <a href="https://ai.cybercongress.ai/">forum</a> or ask on our <a href="https://t.me/fuckgoogle">Telegram chat</a>.</p>
+
+<ul>
+<li>For validators with sentinel nodes or with a decent quantity of peers connected it is not required to fill it out:</li>
+</ul>
+
+<pre><code class="language-bash">seeds = &quot;&quot;
+</code></pre>
+
+<ul>
+<li>For Sentinel nodes and Service nodes it&rsquo;s a good idea to fill it out with a couple of seed node addresses, separated with commas:</li>
+</ul>
+
+<pre><code class="language-bash">seeds = &quot;&lt;seed_node1_ID&gt;@&lt;seed_node1_ip&gt;:&lt;port&gt;,&lt;seed_node2_ID&gt;@&lt;seed_node2_ip&gt;:&lt;port&gt;&quot;
+</code></pre>
+
+<h3 id="persistent-peers">Persistent peers</h3>
+
+<p>The place to add persistent peers is located on <em>line 175.</em> Presence of persistent peers is very important for the correct functioning of the node:</p>
+
+<pre><code class="language-bash"># Comma separated list of nodes to keep persistent connections to
+persistent_peers = &quot;&quot;
+</code></pre>
+
+<ul>
+<li>For Validator nodes you have to fill out this line with a decent amount of peers you <strong>trust</strong>, otherwise, your validator node address will be exposed. In the perfect case scenario, you should add to this section only the addresses of your sentinel nodes:</li>
+</ul>
+
+<pre><code class="language-bash">persistent_peers =&quot;&lt;sentinel_node1_ID&gt;@&lt;sentinel_node1_ip&gt;:&lt;port&gt;,&lt;sentinel_node2_ID&gt;@&lt;sentinel_node2_ip&gt;:&lt;port&gt;&quot;
+</code></pre>
+
+<ul>
+<li>For Sentinel nodes and Service nodes add as many peers as possible to keep a persistent connection and network stability, but <strong>DO NOT</strong> put here you&rsquo;r validator nodes ID&rsquo;s:</li>
+</ul>
+
+<pre><code class="language-bash">persistent_peers =&quot;&lt;node1_ID&gt;@&lt;node1_ip&gt;:&lt;port&gt;,&lt;node2_ID&gt;@&lt;node2_ip&gt;:&lt;port&gt;,...,&lt;node_n_ID&gt;@&lt;node_n_ip&gt;:&lt;port&gt;&quot;
+</code></pre>
+
+<h3 id="peer-exchange-reactor">Peer Exchange Reactor</h3>
+
+<p><em>Line 212</em> shows by default:</p>
+
+<pre><code class="language-bash"># Set true to enable the peer-exchange reactor
+pex = true
+</code></pre>
+
+<p>This is a peer exchange module, which is responsible for exchanging node IDs across the network.</p>
+
+<ul>
+<li>For Validator nodes with Sentinel architecture set this to be disabled:</li>
+</ul>
+
+<pre><code class="language-bash">pex = false
+</code></pre>
+
+<ul>
+<li>For Sentinel nodes and Service nodes leave as default:</li>
+</ul>
+
+<pre><code class="language-bash">pex = true
+</code></pre>
+
+<h3 id="private-peers-id-s">Private peers ID&rsquo;s</h3>
+
+<p>On <em>line 221</em> we see:</p>
+
+<pre><code class="language-bash"># Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+private_peer_ids = &quot;&quot;
+</code></pre>
+
+<p>This is the list of peers which IDs should not gossip to others.</p>
+
+<ul>
+<li>For Validator nodes, leave as default:</li>
+</ul>
+
+<pre><code class="language-bash">private_peer_ids = &quot;&quot;
+</code></pre>
+
+<p>Or you may add your 2nd validator ID here (if you running more than 1 validator).</p>
+
+<ul>
+<li>For Sentinel nodes, add your validator/s address  here:</li>
+</ul>
+
+<pre><code class="language-bash">private_peer_ids = &quot;&lt;validator_node_ID&gt;@&lt;validator_node_ip&gt;:&lt;port&gt;&quot;
+</code></pre>
+
+<ul>
+<li>For Service nodes leave blank:</li>
+</ul>
+
+<pre><code class="language-bash">private_peer_ids = &quot;&quot;
+</code></pre>
+
+<h2 id="node-index-naming">Node Index, Naming</h2>
+
+<h3 id="indexed-tags">Indexed tags</h3>
+
+<p>A node can index and store a decent amount of keys and values with regards to transactions, accounts etc. <em>Lines 306 and 304</em> are responsible for this:</p>
+
+<pre><code class="language-bash"># You can also index transactions by height by adding &quot;tx.height&quot; key here.
+#
+# It's recommended to index only a subset of keys due to possible memory
+# bloat. This is, of course, depends on the indexer's DB and the volume of
+# transactions.
+index_keys = &quot;&quot;
+
+# When set to true, tells indexer to index all compositeKeys (predefined keys:
+# &quot;tx.hash&quot;, &quot;tx.height&quot; and all keys from DeliverTx responses).
+#
+# Note this may be not desirable (see the comment above). IndexKeys has a
+# precedence over IndexAllKeys (i.e. when given both, IndexKeys will be
+# indexed).
+index_all_keys = false
+</code></pre>
+
+<ul>
+<li>For Validator and Sentinel nodes this is not necessary, so leave as default:</li>
+</ul>
+
+<pre><code class="language-bash">index_keys = &quot;&quot;
+
+index_all_keys = false
+</code></pre>
+
+<ul>
+<li>For Service nodes, you should specify a subset of keys you want to index:</li>
+</ul>
+
+<pre><code class="language-bash">index_keys = &quot;tx.hash,tx.height,...etc..&quot;
+
+index_all_keys = true
+</code></pre>
+
+<h3 id="naming">Naming</h3>
+
+<p>To setup up your node moniker please refer to <em>line 16</em> and type in whatever you want to have as moniker:</p>
+
+<pre><code class="language-bash"># A custom human readable name for this node
+moniker = &quot;god_damn_node&quot;
+</code></pre>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#setup-config-toml">Setup config.toml</a>
+<ul>
+<li><a href="#port-address-configuration">Port / Address configuration</a>
+<ul>
+<li><a href="#rpc-port">RPC port</a></li>
+<li><a href="#cyberd-communication-port">Cyberd communication port</a></li>
+<li><a href="#prometheus-collectors-port">Prometheus collectors port</a></li>
+<li><a href="#external-address">External address</a></li>
+<li><a href="#allow-duplicated-ip-s">Allow duplicated IP&rsquo;s</a></li>
+</ul></li>
+<li><a href="#p2p-configuration">P2P configuration</a>
+<ul>
+<li><a href="#seed-nodes">Seed nodes</a></li>
+<li><a href="#persistent-peers">Persistent peers</a></li>
+<li><a href="#peer-exchange-reactor">Peer Exchange Reactor</a></li>
+<li><a href="#private-peers-id-s">Private peers ID&rsquo;s</a></li>
+</ul></li>
+<li><a href="#node-index-naming">Node Index, Naming</a>
+<ul>
+<li><a href="#indexed-tags">Indexed tags</a></li>
+<li><a href="#naming">Naming</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

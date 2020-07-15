@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>euler~Foundation, part 1</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="litvintech, serejandmyself" />
+
+<link rel="canonical" href="../euler-foundation-1/" />
+<link rel="alternate" href="../euler-foundation-1/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="euler~Foundation, part 1" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/euler-foundation-1/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="euler~Foundation, part 1" />
+<meta name="twitter:creator" content="litvintech, serejandmyself" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../highlight/github-gist.css" />
+<link rel="stylesheet" href="../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../img/newlogo.png">
+<link rel="alternate feed" href="../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../asciinema/asciinema-player.js"></script>
+<script src="../highlight/highlight.js"></script>
+
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+  <header class="header-has-logo"  id="stars" >
+        <div class="container cf">
+          <h1 class="pull-left logo margin-bottom">
+            <a href="../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../"><span class='logo-text'>cyber~Congress</span></a>
+          </h1>
+          <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf">
+              <li><a href="../docs/go-cyber/cyberd/"
+                  >Docs</a></li>
+              <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+              <li><a href="../post" >Blog</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+      </header>
+    
+
+  <div class="container">
+
+    
+
+
+    <div class="post">
+      <h1>euler~Foundation, part 1</h1>
+      <p class="date">by litvintech, serejandmyself on 2020-06-30</p>
+
+      <p>
+</p>
+
+      
+
+<h2 id="what-is-it-good-for">What is it good for?</h2>
+
+<p><a href="https://mainnet.aragon.org/#/eulerfoundation/">euler~Foundation</a> is a community-powered DAO and a DeVC backing the <a href="https://github.com/cybercongress/go-cyber">Cyber protocol</a>. It is the predecessor of <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#cyberfoundation">cyber~Foundation</a> (the mainnet DAO-DeVC). Taking into consideration that the Euler network series are an existing product and have a <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#public-profiles-or-how-to-help-cyber-now">community</a> of their own, it is safe to say that the euler~Foundation is here to stay.</p>
+
+<p>The role of the Foundation is to bootstrap a well-governed DAO and a decentralized fund, without bingo BS, CEO&rsquo;s and jurisdictions. It is managed and run by its token holders and charged with its own ETHs. We at cyber~Congress, believe that the Foundation will drive the future growth of Cyber’s ecosystem and can provide cutting-edge, decentralized instruments for its community.</p>
+
+<p>In other words, think money separated from the state. Where the analogue of a decentralised state is the on-chain governance of the sovereign Cyber network with its own utility token CYB. CYB provides access to the knowledge graph, the semantics core, DeMa (decentralized marketing), staking, transacting, etc. CYB also gives access to Cybers community pool. However, the big dough (i.e., the donated ETHs) is managed by a DeVC or euler~Foundation. It is an Aragon-bred DAO. And we believe that this type of architecture will help to decentralize governance even further.</p>
+
+<h2 id="why-do-you-need-a-predecessor-to-cyber-foundation">Why do you need a predecessor to cyber~Foundation?</h2>
+
+<p>During the series of Euler&rsquo;s test networks and its latest release, Euler-6, the team behind Cyber’s launch, the cyber~Congress DAO, <a href="https://cybercongress.ai/euler-ceremony/">launched euler~Foundation</a>. Its goal is to test community mechanisms and accumulate feedback on the future launch of the cyber~Foundation DAO.</p>
+
+<p><strong>What are the main mechanics of the euler~Foundation DAO? How is it connected to Cyber and to the current incentivized testnet, Euler-6?</strong></p>
+
+<ol>
+<li><p>euler~Foundation provided access to the <a href="https://cyber.page/gol/faucet">test~Auction app</a> (the app is called cyber~Auction, in order to separate meaning, during testing, we will call it test~Auction), which allows acquiring ERC-20, GOL tokens in exchange for ETH</p></li>
+
+<li><p>All of the donated ETH went under <a href="https://mainnet.aragon.org/#/eulerfoundation/0x6ea838ca600e05164b7e7c053b4cf570cda9d352/">the management</a> of the euler~Foundation DAO</p></li>
+
+<li><p>GOL holders were able to vest their tokens (lock them for transfer until a given time in the future) and claim a 1-to-1 amount of EULs in Cyber sovereign blockchain, with the help of the <a href="https://github.com/cybercongress/aragon-vesting-app">cyber~Vesting app</a></p></li>
+
+<li><p>GOL holders (with or without vested tokens) can participate in the Foundation&rsquo;s governance process and gain access to the donated ETH</p></li>
+
+<li><p>The most active enthusiasts and community builders may <a href="https://cybercongress.ai/post/obep/">join the cyber~Evangelism program</a> and begin to build their communities, already bringing extra value to Cyber and its adoption</p></li>
+</ol>
+
+<p><strong>The technicalities of the working flow</strong></p>
+
+<p>cyber~Congress developed a basic work flow with which we have launched the Foundation. This process <a href="https://github.com/cybercongress/cyber-foundation/blob/master/euler-foundation/foundation.md">was documented</a> in the launch ceremony for transparency and historical proof. Here is a summary of the flow:</p>
+
+<ol>
+<li><p>The initial distribution of the Foundation’s tokens start with the allocation to the test~Auction (for distribution purposes): the initial donors, inventors of the protocol and the cyber~Congress DAO (this is the allocation described in Cyber&rsquo;s WP)</p></li>
+
+<li><p>Participants of the test~Auction acquired tokens in every (desired) round by making bids. As each round came to an end, the participants could claim the tokens they won (from that particular round) to their account or contract (on the Ethereum network)</p></li>
+
+<li><p>From day 0 (of the auction) untill the end of the vesting period, any holder could lock their tokens (GOL) for transfer and claim Cyber&rsquo;s testnet tokens, EULs</p></li>
+
+<li><p>After the vesting period was over, the possibility to claim EUL tokens (via vesting) ceased to exist. From this moment, all of the vested tokens became transferable</p></li>
+
+<li><p>Before the vesting period came to an end, the tokens of the Foundation had 2 values: governance of the DAO and claiming EULs (Cybers test network token). It is vital to remember that to gain access to the donated ETH one must be a GOL holder</p></li>
+
+<li><p>All the collected ETH during the test~Auction could be transferred to the balance of the Foundation&rsquo;s agent, hence making the donated funds liquid from the beginning of the auction</p></li>
+</ol>
+
+<p>Please note that this flow applies to both, the test~Auction that was held and the future <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#cyberauction-or-auction">cyber~Auction</a> (which will attract ETH for cyber~Foudnation).</p>
+
+<p>For full information about the launch of euler~Foundation, we recommend to research this <a href="https://github.com/cybercongress/cyber-foundation/">repository</a>.</p>
+
+<p><strong>The statistics</strong></p>
+
+<ol>
+<li><p>euler~Foundation was deployed on the 10th of April, and the test~Auction started on the 14th of April. There were a total of 50 rounds</p></li>
+
+<li><p>The so-called <code>round-zero</code> lasted for 10 days and had 1 TGOL* allocated for distribution. Other rounds lasted for 23 hours each and had 122.4 GGOL* (0.1224 TGOL) for distribution</p></li>
+
+<li><p>The total distribution was 7 TGOL and were a part of the incentivized faucet for Euler-6 and <a href="https://cybercongress.ai/playing-gol/">the Game of Links</a>. Join <a href="https://cyber.page/gol">to play</a> now!</p></li>
+
+<li><p>The test~Auction ended on the 10th of June at 11 AM GMT</p></li>
+</ol>
+
+<p>*1 GGOL is Giga GOL or 1 billion GOL or 1,000,000,000 GOL</p>
+
+<p>*1 TGOL is Tera GOL or 1 trillion GOL or 1,000,000,000,000 GOL</p>
+
+<p>Let&rsquo;s take a look at the statistics of the auction rounds:</p>
+
+<p><img src="euler-foundation-gol-price.png" alt="euler-foundation-gol-price" /></p>
+
+<p><img src="euler-foundation-contribution.png" alt="euler-foundation-contribution" /></p>
+
+<p>We can see higher interest at the start of the Auction. 2 days of price discovery in the beginning and active bidding with a small hype towards the end of the Auction.</p>
+
+<p>To gain more understanding of the process, let&rsquo;s take a look at the bidding charts:</p>
+
+<p><img src="euler-foundation-total-bid.png" alt="euler-foundation-total-bid" /></p>
+
+<p><img src="euler-foundation-total-win.png" alt="euler-foundation-total-win" /></p>
+
+<p><strong>Bidders sorted by overall performance*</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>SUM of GOL</th>
+<th>SUM of ETH</th>
+<th>Count of Round</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0x0816743a28fdcd6f4128ab1c7fd48fabc9a47848</td>
+<td>1,742,174,611,816</td>
+<td>0.924</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>0x00ca47db1be92c1072e973fd8dc4a082f7d70214</td>
+<td>572,809,848,617</td>
+<td>0.351</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>0xd78ac6ffc90e084f5fd563563cc9fd33ee303f18</td>
+<td>204,081,632,652</td>
+<td>0.04</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>0xb08773f2de0f987178e5aef09eb0b36b8e7a81c0</td>
+<td>319,430,652,724</td>
+<td>0.28</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>0x7c4401ae98f12ef6de39ae24cf9fc51f80eba16b</td>
+<td>1,949,187,491,541</td>
+<td>5.63</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>0xe8298160c9e8cabd8f2711b92529e0afe8fb01fb</td>
+<td>131,876,262,730</td>
+<td>0.095</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>0x1511a017eafaccbd2eaffa2905d2f0b5843e0c57</td>
+<td>171,255,104,912</td>
+<td>0.12</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>0x63e65bc441334b27d2178f81f2d701e4e58c158a</td>
+<td>254,329,784,339</td>
+<td>0.264</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>0x4919e03c24c403928ef8cfbc0c90d1f337184156</td>
+<td>48,979,591,836</td>
+<td>0.01</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x01f7942fef6439d87b017661e786c517e8287deb</td>
+<td>43,731,778,424</td>
+<td>0.02</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>0xb8113ee1c4dc7b63d04b5543d984b5dbda25518e</td>
+<td>201,559,275,768</td>
+<td>0.23</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>0xb2e19dd996848818d972dd3a60a1b7faffb82330</td>
+<td>930,620,303,246</td>
+<td>2.09</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>0xcc1403fbf4ef3c548274b3d880b5338743ce34cc</td>
+<td>36,014,405,762</td>
+<td>0.01</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0xd12dd8aeb8f96d0bff6aa9c74bdf92009741d3aa</td>
+<td>77,070,437,507</td>
+<td>0.04</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>0x34e3734428182022566d8ed28a5571c89c320525</td>
+<td>45,918,367,347</td>
+<td>0.015</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x79222e91c150511d5738a55a31e55501e9b6c1f0</td>
+<td>55,658,627,087</td>
+<td>0.02</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x3a9d2cc504f6d937ada7f8c8c39bd8d047623584</td>
+<td>56,496,287,788</td>
+<td>0.08</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>0x99ffe77b01603b136b181189524d425ff1e38fb3</td>
+<td>78,536,803,942</td>
+<td>0.092</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>0x8df8327b1091034d26e9e51ee3daf441e2293e21</td>
+<td>43,217,286,914</td>
+<td>0.03</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x9bb77d01a9b12e04e9db99ec2dd5f564be0265a1</td>
+<td>7,332,274,227</td>
+<td>0.01</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x599dfeefbdf19ecb3a1d2076d594ede3a574a020</td>
+<td>5,188,516,084</td>
+<td>0.01</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0x97975ed1aab49b8c5d30e6856ddfe20b4896490f</td>
+<td>20,576,131,687</td>
+<td>0.05</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>0xfc689e70d3a351a56738a92f104a0dd051bf5f7b</td>
+<td>3,954,522,984</td>
+<td>0.028</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<p>*the overall performance is calculated based on the final buying price in all of the rounds and the cumulative sum of the won amount for any given account.</p>
+
+<p><strong>Total Fees paid for bids and claims</strong></p>
+
+<p><img src="euler-foundation-fees-paid.png" alt="euler-foundation-fees-paid" /></p>
+
+<p>Sum: 0.687 ETH</p>
+
+<p><strong>Uclaimed from the Auction</strong></p>
+
+<p><code>Uclaimed from the Auction</code>, means that an account made their bids and won tokens but didn&rsquo;t claim/transfer tokens to their personal account for some reason.</p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>SUM of GOL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0xfc689e70d3a351a56738a92f104a0dd051bf5f7b</td>
+<td>3954522984</td>
+</tr>
+
+<tr>
+<td>0xe8298160c9e8cabd8f2711b92529e0afe8fb01fb</td>
+<td>95119739031</td>
+</tr>
+
+<tr>
+<td>0xd78ac6ffc90e084f5fd563563cc9fd33ee303f18</td>
+<td>204081632652</td>
+</tr>
+
+<tr>
+<td>0x34e3734428182022566d8ed28a5571c89c320525</td>
+<td>45918367347</td>
+</tr>
+
+<tr>
+<td>0x1511a017eafaccbd2eaffa2905d2f0b5843e0c57</td>
+<td>171255104912</td>
+</tr>
+
+<tr>
+<td>0x01f7942fef6439d87b017661e786c517e8287deb</td>
+<td>21865889212</td>
+</tr>
+
+<tr>
+<td>0x00ca47db1be92c1072e973fd8dc4a082f7d70214</td>
+<td>45771239156</td>
+</tr>
+
+<tr>
+<td>Grand Total</td>
+<td>587966495294</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>GOL distribution</strong></p>
+
+<p><img src="euler-foundation-gol-holders.png" alt="euler-foundation-gol-holders" /></p>
+
+<p>Final stats of the Auction:</p>
+
+<ol>
+<li><p>There were 23 participants</p></li>
+
+<li><p>159 bids were made</p></li>
+
+<li><p>10.439 ETH were donated</p></li>
+
+<li><p>6.413 TGOLs (of 7 TGOLs) acquired tokens and claimed</p></li>
+</ol>
+
+<p>Final stats of Vesting:</p>
+
+<ol>
+<li><p>11.621 TGOL were vested (of 15 TGOLs possible)</p></li>
+
+<li><p>64 vestings operations were made</p></li>
+
+<li><p>27 accounts or contracts vested their tokens</p></li>
+</ol>
+
+<h2 id="governance-the-final-frontier">Governance, the final frontier</h2>
+
+<p>The obvious question that anyone should ask, is what comes next? The obvious answer is - <code>Governance</code>. To understand this better, let&rsquo;s try to go over the process once again:</p>
+
+<p>1) The cyber~Congress DAO deploys the Euler networks, the eluer~Foundation DAO, and the test~Auction</p>
+
+<p>2) There are 4(!) tokens. 2 tokens are for the test network epochs and 2 for the mainnet</p>
+
+<p>2A) GOL is an ERC-20 token and is the testing equivalent of THC. It can be acquired via auctions (the test~Auction and the future cyber~Auction) and provides access for its token holders to the donated ETH. When locked (vested) for the period of the auction, it also gives the person the ability to claim the main utility token of the Cyber sovereign network</p>
+
+<p>2B) EUL is the testing equivalent of CYB, Cybers sovereign mainnet token on a Cosmos-SDK based, Tendermint-backed chain. It is the main utility token used for accessing the knowledge graph, committing cyberlinks, transacting, staking, securing the network, etc. It also provides access to on-chain governance on Cyber and to its community pool. It can be acquired either via <a href="https://cybercongress.ai/how-to-donate/">the takeoff round</a> or by vesting the DAO token (2A)</p>
+
+<p>3) At one point, it was decided to separate Euler from Cyber networks, just like Kusama and Polka are. I.E. the Euler test networks and the euler~Foudnation DAO became a thing on their own. They exist and will NOT cease to exist in the future (unless no one wants to support them anymore). In other words, this means that GOLs and EULs are not only test network tokens. It is up to the community to decide on its monetary value from this point on. After all, GOL holders have gained access to the very real ETH donated during the test~Auction</p>
+
+<p>4) This means that there are 2 separate governance processes. The first is the on-chain governance process on Cyber&rsquo;s sovereign network (Euler test networks for now). EUL token holders may take advantage of <a href="https://github.com/cybercongress/congress/blob/master/ecosystem/Cyber%20Homestead%20doc.md#participating-in-governance">the community pool, propose ideas</a>, change parameters, etc. They may also participate in the Game of Links via governance (the governance <a href="https://cyber.page/governance">discipline of the Game of Links has 2 TEULs allocated</a>, and its decisions will migrate to the mainnet. In other words, these particular EULs will become CYBs)</p>
+
+<p>4A) The second part of the governance is for GOL holders. As GOLs are ERC-20 tokens and euler~Foundation is an Aragon-based DAO, the governance process happens on Ethereum. This part gives the participants the possibility to govern the donated ETH</p>
+
+<p>5) euler~Foundatin is the cornerstone of Cyber. It is up to it to make Cyber <code>a thing</code> on the blockchain market and in the search realm of the internet via collective decisions without any CEOs and\or jurisdictions (please note that no legal foundations backing either, Euler and\or Cyber Foundation exist. There are also non of this BS in the network itself, everything is managed by the users, DAOs, economics, and code)</p>
+
+<p>6) Another part of the euler~Foundation is its ability to have apps. Like the evangelist app (Cybers ambassador program). This lets you use web3 mechanics, <a href="https://cyber.page/evangelism">apply for the ambassador program</a>, and earn rewards from the Foundation</p>
+
+<h2 id="call-to-action">Call to action</h2>
+
+<p>In essence, all of this means that right now, GOL token holders are in charge of the donated ETH to the euler~Foundation. It is now up to them to <a href="https://mainnet.aragon.org/#/eulerfoundation/0x47cab484d85ff17c7849d0c198b5313db672f4ce/">kick off</a> the decision process of what to do with the modest donated sum. Should it be invested to gain more ETH? Should it be spent on security? Should it be given away to community members that have blue eyes? And so on.</p>
+
+<p>We call upon GOL holders to use <a href="https://mainnet.aragon.org/#/eulerfoundation/0x47cab484d85ff17c7849d0c198b5313db672f4ce/">Aragon&rsquo;s UI</a>, make proposals, think of ideas and to start making search great again!</p>
+
+<p>Come and explorer euler~Foundation on Aragon here: <a href="https://mainnet.aragon.org/#/eulerfoundation/">https://mainnet.aragon.org/#/eulerfoundation/</a></p>
+
+<p>Connect your ETH account, which has GOL tokens, and use the UI to create proposals and vote on them. Check out the finance and the tokens tabs. Explore the surroundings. Be active! There is no legal entity here, but only the agent of the DAO, its balances, and the token holders. It is now you who is in charge. Let&rsquo;s make decentralization decentralized!</p>
+
+
+      
+          <h2 id="comments">Comments</h2>
+          <div id='discourse-comments'></div>
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
+              discourseEmbedUrl: 'https://ipfs.io/blog/euler-foundation-1' };
+              if (window.location.hostname === 'blog.ipfs.io') {
+                (function() {
+                  var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                  d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+              } else {
+                 
+                 
+                 document.getElementById('comments').style.display = 'none';
+                 document.getElementById('discourse-comments').style.display = 'none';
+              }
+          </script>
+      
+    </div>
+  </div> 
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

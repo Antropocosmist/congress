@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>State migration proccess from euler-5 -&gt; euler-6</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="serejandmyself" />
+
+<link rel="canonical" href="../euler-6-migration/" />
+<link rel="alternate" href="../euler-6-migration/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="State migration proccess from euler-5 -&gt; euler-6" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/euler-6-migration/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="State migration proccess from euler-5 -&gt; euler-6" />
+<meta name="twitter:creator" content="serejandmyself" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../highlight/github-gist.css" />
+<link rel="stylesheet" href="../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../img/newlogo.png">
+<link rel="alternate feed" href="../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../asciinema/asciinema-player.js"></script>
+<script src="../highlight/highlight.js"></script>
+
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+  <header class="header-has-logo"  id="stars" >
+        <div class="container cf">
+          <h1 class="pull-left logo margin-bottom">
+            <a href="../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../"><span class='logo-text'>cyber~Congress</span></a>
+          </h1>
+          <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf">
+              <li><a href="../docs/go-cyber/cyberd/"
+                  >Docs</a></li>
+              <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+              <li><a href="../post" >Blog</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+      </header>
+    
+
+  <div class="container">
+
+    
+
+
+    <div class="post">
+      <h1>State migration proccess from euler-5 -&gt; euler-6</h1>
+      <p class="date">by serejandmyself on 2020-02-24</p>
+
+      <p>
+</p>
+
+      
+
+<blockquote>
+<p>Summary: Currently we have at least one blocking error to continue the Game of Links on top of the euler-5 network: a bandwidth limiting bug which removes the ability to correctly load the network. According to the outlined launch protocol of euler-5, we have to act and relaunch the network.</p>
+</blockquote>
+
+<p>Due to the blocking error described in <a href="https://github.com/cybercongress/congress/issues/309">#309</a>, we shall activate the <a href="https://github.com/cybercongress/congress/blob/master/site/content/post/game-of-links.md#crisis-protocol">crisis protocol</a> and migrate from euler 5 -&gt; euler-6.</p>
+
+<p>The migration will include:</p>
+
+<ul>
+<li>A rewritten storage for using the latest SDK features (such as IAVL with in-memory data, which periodically flushes to disk. This was introduced in SDK 0.38.0 for high I/O performing chain, such as ours)</li>
+<li>During calculation, we now catch NaN values and assign zero values to them</li>
+<li>Bandwidth consumption during linking is fixed and now consumes/regenerates energy as should</li>
+<li>The whole chain upgraded to the latest SDK: 0.38.1</li>
+<li>CosmWasm integration (smart-contracts!)</li>
+<li>On-chain upgrades! This will allow us to upgrade the chain via governance with (almost) zero-time downtime</li>
+</ul>
+
+<p>You may follow the <a href="https://github.com/cybercongress/cyberd/projects/6">project board for migration here</a>.</p>
+
+<h2 id="news-by-litvintech">News by @litvintech</h2>
+
+<p>Since the launch of Euler-5 in December, I was fully concentrated on code polishing and preparation of the cyber~Foundation setup ceremony. Huge progress with this. We are almost finished with the ceremony. Also, huge progress with the cyber.page application, which will be released in weeks to come, and will have an awesome set of new features.</p>
+
+<p>But today, I mostly want to describe the progress made with the chain and make some announcements.</p>
+
+<p>January started with signals from validators on failed node reload in 25% of cases. @mrlp4 quickly helped me to collect data with which I started debugging these cases. It&rsquo;s a medium-high impact issue. During this, we continued to support validators that had this problem and continuously provided them with the latest chain backups to allow them ASAP relaunch.</p>
+
+<p>I found that the roots of the issue lay with our custom storage for links, which we developed for the first Euler release. At the time we decided to use custom storage, as the cosmos-SDK storage was pretty slow for our use case.</p>
+
+<p>Debugging in a decentralized environment, i.e. blockchains, is a pretty complex thing. But looking ahead I’ll say that we dealt with all the issues efficiently. During the debugging of storage, I found an issue with rank calculation, which doesn&rsquo;t lead to halts, but produces results not specified by the protocol.</p>
+
+<p>As you know, we are computing a token-weighted page rank: cyber~Rank. All the cyberlinks are stored permanently with the account that made these cyberlinks. The aggregation of all weights between given objects (CIDs), is the sum of the current account balances, which made the cyberlinks between these objects. Transfer of tokens affects weights of the produced cyberlinks of an agent. Therefore, rank values - change.</p>
+
+<p>The case I found, was when an agent (subject) transfers their full balance from their account to another account, and there is only one cyberlink between two CIDs (made only by this agent). This results in zero aggregate sum of weight and produces a NaN (Not-a-Number) value when division happens inside the rank algorithm. The issue is in both, GPU (production) and CPU (local development, cross-testing) rank code.</p>
+
+<p>We also found an issue with the consumption of bandwidth during linking. It was produced during last-minute featuring before Euler-5 launch. The issue leads to fast bandwidth regeneration as if it was consumed for linking.</p>
+
+<p>All of this is now solved, and plenty of other new features are introduced in the new release!</p>
+
+<h2 id="state-migration-process-by-savetheales">State migration process by @SaveTheAles</h2>
+
+<p>To update the chain we plan to implement the following migration process. (Read the <a href="https://github.com/cybercongress/launch-kit/blob/0.1.0/migrations/e-6%20migration_proposal.md">full internal proposal here</a>).</p>
+
+<p>4 major things should be taken into account:</p>
+
+<ul>
+<li>Cyberlinks made by an agent</li>
+<li>Karma of an agent</li>
+<li>Precommits by a validator</li>
+<li>The stake of a validator</li>
+</ul>
+
+<p>Given the circumstances, an agents&rsquo; karma was compromised by the bug described by @litvintech, so there is no sense to migrate karma values between testnets.</p>
+
+<p>The solution is in migrating cyberlinks. It is possible to export all of the cyberlinks made by an agent to an IPLD-like structure and add an opportunity for the agents to make their cyberlinks again in the new testnet, with one single transaction. In other words: in the new testnet, the agents can get their links from the previous testnet by a query to an IPLD structure, generate a transaction with all their previously made cyberlinks, sign it and broadcast it to the new network using their ledger via the <a href="https://cyber.page/pocket">cyber.page app</a> or manually, via <a href="https://cybercongress.ai/docs/cyberd/ultimate-commands-guide/">CLI</a>.</p>
+
+<p>This lets us cover two of the migration points: cyberlinks and karma. <strong>The weakness of that method is that anyone can relink all the previously made cyberlinks before the original discoverers.</strong></p>
+
+<p>The migration of the precommits is complex. To avoid any additional changes in the distribution, we will save the state of the precommits in <a href="https://github.com/cybercongress/launch-kit/tree/0.1.0/game_rewards_calculations">a .csv file</a> at a certain block height and use it for the Game of Links recalculations after the Game. Thus, we can avoid major changes in the distribution and make the migration a smoother process.</p>
+
+<p>The stake of the validators should be burned. The complexity of changing distribution parameters is much higher than the error of the final stake results. This means that the accounts in euler-6 genesis file will be the same as those of euler-5.</p>
+
+<p>Additionally, we are now able to test the <code>genesis ceremony</code> and hold parameters discussion. The <code>genesis ceremony</code>  is the process of signing the genesis file by validators who want to participate in the initial transaction of the network. Validators can sign the Genesis before the launch and start validating from the first block. The <a href="https://github.com/cybercongress/launch-kit">launch-kit repo</a> is now ready for newcomers and it seems possible to do this now.</p>
+
+<p>The workflow should be fairly easy:</p>
+
+<ol>
+<li>Announce network halt at a given block height</li>
+<li>Export precommits and cyberlinks on a given block</li>
+<li>Import the required UI for cyber.page to migrate cyberlinks</li>
+<li>Create a guide for importing cyberlinks via the CLI</li>
+<li>Generate Genesis</li>
+<li><a href="https://github.com/cybercongress/launch-kit/blob/0.1.0/gen_txs/README.md">Genesis ceremony</a></li>
+<li>Relaunch</li>
+</ol>
+
+<p>Comments and ideas are welcome in <a href="https://github.com/cybercongress/congress/issues/309">309</a>.</p>
+
+
+      
+          <h2 id="comments">Comments</h2>
+          <div id='discourse-comments'></div>
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
+              discourseEmbedUrl: 'https://ipfs.io/blog/euler-6-migration' };
+              if (window.location.hostname === 'blog.ipfs.io') {
+                (function() {
+                  var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                  d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+              } else {
+                 
+                 
+                 document.getElementById('comments').style.display = 'none';
+                 document.getElementById('discourse-comments').style.display = 'none';
+              }
+          </script>
+      
+    </div>
+  </div> 
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

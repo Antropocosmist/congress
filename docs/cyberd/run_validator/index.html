@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/cyberd/run_validator/" />
+<link rel="alternate" href="../../../docs/cyberd/run_validator/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/cyberd/run_validator/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Run Validator
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+  <ul>
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/chaingear/" >
+    
+  
+    
+    
+    Chaingear
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/contracts/" >
+    
+  
+    
+    Contracts
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/drafts/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/help/development/" >
+    
+  
+    
+    Development
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/pipelines/" >
+    
+  
+    
+    Pipelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/chaingear/whitepaper/" >
+    
+  
+    
+    Whitepaper
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+      
+
+  <li >
+    
+      
+
+  <a href="../../../docs/cyb/" >
+    
+  
+    
+    
+    Cyb
+  
+
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/app-guidelines/" >
+    
+  
+    
+    App Guidelines
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/cyb/" >
+    
+  
+    
+    Cyb
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/dura/" >
+    
+  
+    
+    Dura
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyb/web3-vision/" >
+    
+  
+    
+    Web3 Vision
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/run_validator/"  class="active">
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/cyberd/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  </li>
+
+
+    
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd/" >
+    
+  
+    
+    Cyberd
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/cyberd_ledger_guide/" >
+    
+  
+    
+    Cyberd Ledger Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/get_cyb/" >
+    
+  
+    
+    Get C Y B
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/help/problem_to_install_drivers/" >
+    
+  
+    
+    Problem to Install Drivers
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/keystore/" >
+    
+  
+    
+    Keystore
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/multisig_guide/" >
+    
+  
+    
+    Multisig Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/port_forwarding_guide/" >
+    
+  
+    
+    Port Forwarding Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/rpc/" >
+    
+  
+    
+    Rpc
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/run_validator/" >
+    
+  
+    
+    Run Validator
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_cyberd_configuration/" >
+    
+  
+    
+    Setup Cyberd Configuration
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/setup_dev_env/" >
+    
+  
+    
+    Setup Dev Env
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/supported_gpu_list/" >
+    
+  
+    
+    Supported Gpu List
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/ultimate-commands-guide/" >
+    
+  
+    
+    Ultimate Commands Guide
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" >
+    
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-amino/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/changelog/" >
+    
+  
+    
+    Changelog
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/contributing/" >
+    
+  
+    
+    Contributing
+  
+
+  </a>
+
+
+    </li>
+    
+    <li>
+      
+
+  <a href="../../../docs/js-cosmos/overview/" >
+    
+  
+    
+    Overview
+  
+
+  </a>
+
+
+    </li>
+    
+  </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="join-cyberd-testnet-as-a-validator">Join Cyberd testnet as a Validator</h1>
+
+<p><strong>Note</strong> The current active testnet is <code>euler-6</code> (substitute <testnet_chain_id> with that value, do not forget to remove the <code>&lt;</code> and the <code>&gt;</code> symbols).</p>
+
+<h2 id="prepare-your-server">Prepare your server</h2>
+
+<p>First of all, you should set up a server.
+Your node should be running (online) constantly. This means that you will need a reliable server to keep it running.
+You may also consider using any cloud service with a dedicated GPU, like Hetzner (or use a local machine). Whatever you&rsquo;ll choose, for better stability and consistency we recommend to use a dedicated server for each separate validator node.</p>
+
+<p>Cyberd is based on Cosmos-SDK and is written in Go.
+It should work on any platform which can compile and run programs in Go.
+However, we strongly recommend running the validator node on a Linux-based server.</p>
+
+<p>The rank calculations are done via GPU computations.
+They are easy to parallelize. This is why we recommended using a GPU.</p>
+
+<p>Recommended requirements:</p>
+
+<pre><code class="language-js">CPU: 6 cores
+RAM: 32 GB
+SSD: 256 GB
+Connection: 100Mb, Fiber, Stable and low-latency connection
+GPU: Nvidia GeForce(or Tesla/Titan/Quadro) with CUDA-cores; at least 6gb of memory*
+Software: Ubuntu 18.04 LTS
+</code></pre>
+
+<p><em>Cyberd runs well on consumer-grade cards like Geforce GTX 1070, but we expect load growth and advise to use Error Correction compatible cards from Tesla or Quadro families. Also, make sure your card is compatible with &gt;=v.410 of NVIDIA drivers.</em></p>
+
+<p>What about RAM? The minimal ammount, which will fit a node (with ~100K links in the chain): 10 GB. It migth be possiple to start a node with a lower ammount of RAM, but we migth not be able to support these cases.</p>
+
+<p>Of course, the hardware is your own choice and technically it might be possible to run the node on &ldquo;even - 1 CUDA core GPU&rdquo;, but you should be aware of stability and in a decline in the calculation speed of the rank.</p>
+
+<h2 id="validator-setup">Validator setup</h2>
+
+<p><em>To avoid possible misconfiguration issues and to simplify the setup of <code>$ENV</code>, we recommend to perform all the commands as <code>root</code> (here root - is literally root, not just a user with root priveliges)</em></p>
+
+<h3 id="third-party-software">Third-party software</h3>
+
+<p>To access the GPU, cyberd uses Nvidia drivers version <strong>410+</strong> and the <a href="https://developer.nvidia.com/cuda-downloads">Nvidia CUDA toolkit</a> should be installed on the hosting system.</p>
+
+<p>You may skip any sections of the guide if you already have any of the necessary software configured.</p>
+
+<p>As long as the current implementation of <code>cyber</code> is written in <a href="https://golang.org/">Go</a>, you will need to install Go.</p>
+
+<h3 id="installing-go">Installing Go</h3>
+
+<p>For <code>euler-6</code> Cyberd requires at least Go version 1.13+. Install it according to the official <a href="https://golang.org/doc/install">guide</a>:</p>
+
+<ul>
+<li>Download the archive:</li>
+</ul>
+
+<pre><code class="language-bash">wget https://dl.google.com/go/go1.13.11.linux-amd64.tar.gz
+</code></pre>
+
+<ul>
+<li>Extract it into <code>/usr/local</code>, creating a Go tree in <code>/usr/local/go</code>:</li>
+</ul>
+
+<pre><code class="language-bash">tar -C /usr/local -xzf go1.13.11.linux-amd64.tar.gz
+</code></pre>
+
+<ul>
+<li>Add <code>/usr/local/go/bin</code> to the PATH environment variable. You can do this by adding this line to your <code>/etc/profile</code> (for installation on the whole system) or <code>$HOME/.bashrc</code>:</li>
+</ul>
+
+<pre><code class="language-bash">export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+
+<ul>
+<li>Do <code>source</code> for the file with your <code>$PATH</code> variable or just log-out/log-in:</li>
+</ul>
+
+<pre><code class="language-bash">source /etc/profile
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-bash">source $HOME/.bashrc
+</code></pre>
+
+<ul>
+<li>To check your installation run</li>
+</ul>
+
+<pre><code class="language-bash">`go version`
+</code></pre>
+
+<p>This will let you know if everything was installed correctly. As an output, you should see the following (version number may vary, of course):</p>
+
+<pre><code class="language-bash">go version go1.13.11 linux/amd64
+</code></pre>
+
+<h4 id="installing-nvidia-drivers">Installing Nvidia drivers</h4>
+
+<p>To proceed, first, add the <code>ppa:graphics-drivers/ppa</code> repository into your system (you might see some warnings - press <code>enter</code>):</p>
+
+<pre><code class="language-bash">sudo add-apt-repository ppa:graphics-drivers/ppa
+</code></pre>
+
+<pre><code class="language-bash">sudo apt update
+</code></pre>
+
+<p>Install Ubuntu-drivers:</p>
+
+<pre><code class="language-bash">sudo apt install -y ubuntu-drivers-common
+</code></pre>
+
+<p>Next, identify your graphic card model and the recommended drivers:</p>
+
+<pre><code class="language-bash">ubuntu-drivers devices
+</code></pre>
+
+<p>You should see something similar to this:</p>
+
+<pre><code class="language-bash">== /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
+modalias : pci:v000010DEd00001BA1sv00001462sd000011E4bc03sc00i00
+vendor   : NVIDIA Corporation
+model    : GP104M [GeForce GTX 1070 Mobile]
+driver   : nvidia-driver-418 - third-party free
+driver   : nvidia-driver-410 - third-party free
+driver   : nvidia-driver-430 - third-party free
+driver   : nvidia-driver-440 - third-party free recommended
+driver   : xserver-xorg-video-nouveau - distro free builtin
+</code></pre>
+
+<p>We need the <strong>410+</strong> drivers release. As you can see that v440 is recommended. The command below will install the recommended version of the drivers:</p>
+
+<pre><code class="language-bash">sudo ubuntu-drivers autoinstall
+</code></pre>
+
+<p>The driver installation takes approximately 10 minutes.</p>
+
+<pre><code class="language-bash">DKMS: install completed.
+Setting up libxdamage1:i386 (1:1.1.4-3) ...
+Setting up libxext6:i386 (2:1.3.3-1) ...
+Setting up libxfixes3:i386 (1:5.0.3-1) ...
+Setting up libnvidia-decode-415:i386 (415.27-0ubuntu0~gpu18.04.1) ...
+Setting up build-essential (12.4ubuntu1) ...
+Setting up libnvidia-gl-415:i386 (415.27-0ubuntu0~gpu18.04.1) ...
+Setting up libnvidia-encode-415:i386 (415.27-0ubuntu0~gpu18.04.1) ...
+Setting up nvidia-driver-415 (415.27-0ubuntu0~gpu18.04.1) ...
+Setting up libxxf86vm1:i386 (1:1.1.4-1) ...
+Setting up libglx-mesa0:i386 (18.0.5-0ubuntu0~18.04.1) ...
+Setting up libglx0:i386 (1.0.0-2ubuntu2.2) ...
+Setting up libgl1:i386 (1.0.0-2ubuntu2.2) ...
+Setting up libnvidia-ifr1-415:i386 (415.27-0ubuntu0~gpu18.04.1) ...
+Setting up libnvidia-fbc1-415:i386 (415.27-0ubuntu0~gpu18.04.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for initramfs-tools (0.130ubuntu3.1) ...
+update-initramfs: Generating /boot/initrd.img-4.15.0-45-generic
+</code></pre>
+
+<p>Reboot the system for the changes to take effect.</p>
+
+<p>Check the installed drivers:</p>
+
+<pre><code class="language-bash">nvidia-smi
+</code></pre>
+
+<p>You should see this:
+(Some version/driver numbers might differ. You might also have some processes already running)</p>
+
+<pre><code class="language-bash">+-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.26       Driver Version: 430.14       CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1070    Off  | 00000000:01:00.0 Off |                  N/A |
+| 26%   36C    P5    26W / 180W |      0MiB /  8119MiB |      2%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</code></pre>
+
+<h3 id="install-cuda-toolkit">Install CUDA toolkit</h3>
+
+<p>Simply run:</p>
+
+<pre><code class="language-bash">apt install nvidia-cuda-toolkit
+</code></pre>
+
+<p>Any version above 9.1 is OK. To check the version run:</p>
+
+<pre><code class="language-bash">nvcc --version
+</code></pre>
+
+<p>The possible output will look like this:</p>
+
+<pre><code class="language-bash">nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Nov__3_21:07:56_CDT_2017
+Cuda compilation tools, release 9.1, V9.1.85
+</code></pre>
+
+<h3 id="launching-cyberd-fullnode">Launching Cyberd fullnode</h3>
+
+<p>Add environment variables:</p>
+
+<pre><code class="language-bash">export DAEMON_HOME=$HOME/.cyberd
+export DAEMON_NAME=cyberd
+</code></pre>
+
+<p>To make those variables persistent add them to the end of the <strong><code>$HOME/.bashrc</code></strong> and log-out/log-in, or do:</p>
+
+<pre><code class="language-bash">source ~/.bashrc
+</code></pre>
+
+<p>Make a directories tree for storing your daemon:</p>
+
+<pre><code class="language-bash">mkdir $HOME/.cyberd
+mkdir -p $DAEMON_HOME/upgrade_manager
+mkdir -p $DAEMON_HOME/upgrade_manager/genesis
+mkdir -p $DAEMON_HOME/upgrade_manager/genesis/bin
+</code></pre>
+
+<p>Download cosmosd (upgrade manager for Cosmos SDK) of version 2.0 and build it:</p>
+
+<pre><code class="language-bash">wget https://github.com/regen-network/cosmosd/archive/0.2.0.tar.gz
+tar -xzf 0.2.0.tar.gz
+cd cosmosd-0.2.0/
+go build
+mv cosmosd $DAEMON_HOME/
+chmod +x $DAEMON_HOME/cosmosd
+</code></pre>
+
+<p>Clone the go-cyber repo, checkout to the necessary version (<code>master</code> by default):</p>
+
+<pre><code class="language-bash">cd ~
+git clone https://github.com/cybercongress/go-cyber
+</code></pre>
+
+<p>Build cyber~Rank CUDA kernel:</p>
+
+<pre><code class="language-bash">cd ~/go-cyber/x/rank/cuda/
+make
+</code></pre>
+
+<p>Build cyber daemon (as a result you should see <code>cyberd</code> and <code>cyberdcli</code> files inside of the <code>go-cyber/build/</code> folder):</p>
+
+<pre><code class="language-bash">cd ~/go-cyber
+make build
+</code></pre>
+
+<p>If you are getting an error about the <code>libgo_cosmwasm.so</code> library missing, please download and build cosmwasm version 0.7.2 (smart-contracts module for Cosmos SDK) then copy the missing libraries, and re-build <code>cyberd</code>:</p>
+
+<pre><code class="language-bash">wget https://github.com/CosmWasm/go-cosmwasm/archive/v0.7.2.tar.gz
+tar -xzf v0.7.2.tar.gz
+cd go-cosmwasm-0.7.2/
+make build
+cp ./api/libgo_cosmwasm.so /usr/lib/
+cp ./api/libgo_cosmwasm.dylib /usr/lib/
+</code></pre>
+
+<p>Copy cyberd the binaries to an apropriate locations and add execute permitions to them:</p>
+
+<pre><code class="language-bash">cp build/cyberd $DAEMON_HOME/upgrade_manager/genesis/bin
+cp build/cyberdcli /usr/local/bin/
+cp build/cyberd /usr/local/bin/
+chmod +x $DAEMON_HOME/upgrade_manager/genesis/bin/cyberd
+</code></pre>
+
+<p>Initialize cyber daemon (don&rsquo;t forget to change the node moniker):</p>
+
+<pre><code class="language-bash">cd $DAEMON_HOME/upgrade_manager/genesis/bin
+./cyberd init &lt;your_node_moniker&gt; --home $DAEMON_HOME
+</code></pre>
+
+<p>Your folder with cyberd must look like this after initialization:</p>
+
+<pre><code class="language-bash">root@node:~/.cyberd# tree
+.
+├── config
+│   ├── app.toml
+│   ├── config.toml
+│   ├── node_key.json
+│   └── priv_validator_key.json
+├── cosmosd
+├── data
+│   └── priv_validator_state.json
+└── upgrade_manager
+    └── genesis
+        └── bin
+            └── cyberd
+</code></pre>
+
+<p>As a result of this operation, the <code>data</code> and <code>config</code> folders should appear inside of your <em>$DAEMON_HOME/</em> folder.</p>
+
+<p>Download <code>genesis.json</code> and place into your <code>.cyberd/config</code>:</p>
+
+<pre><code class="language-bash">cd $DAEMON_HOME/config
+wget -O genesis.json https://ipfs.io/ipfs/QmZHpLc3H5RMXp3Z4LURNpKgNfXd3NZ8pZLYbjNFPL6T5n
+</code></pre>
+
+<p>Setup private peers in <code>config.toml</code>. You can find them on our <a href="https://ai.cybercongress.ai/t/euler-6-testnet-faq/65">forum</a>.</p>
+
+<h3 id="setup-cyberd-as-a-service-ubuntu">Setup cyberd as a service (Ubuntu)</h3>
+
+<p>Increase resource limits for <a href="https://tendermint.com">Tendermint</a>:</p>
+
+<pre><code class="language-bash">ulimit -n 4096
+</code></pre>
+
+<p>Make cyberd a system service. This will help you easily start/stop cyberd and run it in the background:</p>
+
+<pre><code class="language-bash">sudo nano /etc/systemd/system/cyberd.service
+</code></pre>
+
+<p>Paste the following (replace <code>ubuntu</code> with your username, or if you running as <code>root</code> replce the whole <em>/home/ubuntu/</em> to <code>/root/</code>):</p>
+
+<pre><code class="language-bash">[Unit]
+Description=Cyber Node
+After=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.cyberd/
+ExecStart=/home/ubuntu/.cyberd/cosmosd start --compute-rank-on-gpu=true
+Environment=DAEMON_HOME=/home/ubuntu/.cyberd
+Environment=DAEMON_NAME=cyberd
+Environment=GAIA_HOME=/home/ubuntu/.cyberd
+Restart=always
+RestartSec=3m
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<p>If you need to enable search of the node add the flag <code>--allow-search=true</code> right after <code>--compute-rank-on-gpu=true</code>. If you need to run a rest-server alongside <code>cyberd</code> here is a service file for it (do <code>sudo nano /etc/systemd/system/cyberdcli-rest.service</code> and paste the following), just make sure you&rsquo;ll replace <code>ubuntu</code> to your user name and group:</p>
+
+<pre><code class="language-bash">[Unit]
+Description=Cyberdcli REST Server
+
+[Service]
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/local/bin/cyberdcli rest-server --laddr tcp://0.0.0.0:1317 --chain-id euler-6
+Restart=always
+TimeoutSec=120
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<p>There&rsquo;s a possibility to build and run swagger-ui for your node to get a better experience with the rest-server. To get it up you&rsquo;ll have to install <code>static</code> library for Go:</p>
+
+<pre><code class="language-bash">go get github.com/rakyll/statik
+</code></pre>
+
+<p>Then <code>cd</code> to the go-cyber repo and set static file for swagger-ui:</p>
+
+<pre><code class="language-bash">cd &lt;path_to_go-cyber&gt;/go-cyber/
+statik -src=cmd/cyberdcli/swagger-ui -dest=cmd/cyberdcli/lcd -f
+</code></pre>
+
+<p>Rebuild cyberdcli and replace the one in <code>/usr/local/bin</code> (no worries, you won&rsquo;t lose your keys, if you already have keys imported):</p>
+
+<pre><code class="language-bash">make build
+cp build/cyberdcli /usr/local/bin/
+</code></pre>
+
+<p>When all of the above steps are completed and cyberdcli-rest service has been started, you should have Swagger-ui available at <code>http://localhost:1317/swagger-ui/</code> .</p>
+
+<p>Run cyberd:</p>
+
+<p>Reload <code>systemd</code> after the creation of the new service:</p>
+
+<pre><code class="language-bash">systemctl daemon-reload
+</code></pre>
+
+<p>Start the node:</p>
+
+<pre><code class="language-bash">sudo systemctl start cyberd
+</code></pre>
+
+<p>Check node status:</p>
+
+<pre><code class="language-bash">sudo systemctl status cyberd
+</code></pre>
+
+<p>Enable the service to start with the system:</p>
+
+<pre><code class="language-bash">sudo systemctl enable cyberd
+</code></pre>
+
+<p>Check logs:</p>
+
+<pre><code class="language-bash">journalctl -u cyberd -f --lines 20
+</code></pre>
+
+<p>If you need to stop the node:</p>
+
+<pre><code class="language-bash">sudo systemctl stop cyberd
+</code></pre>
+
+<p>All commands in this section are also applicable to <code>cyberdcli-rest.service</code>.</p>
+
+<p>At this point your cyberd should be running in the backgroud and you should be able to call <code>cyberdcli</code> to operate with the client. Try calling <code>cyberdcli status</code>. A possible output looks like this:</p>
+
+<pre><code class="language-bash">{&quot;node_info&quot;:{&quot;protocol_version&quot;:{&quot;p2p&quot;:&quot;6&quot;,&quot;block&quot;:&quot;9&quot;,&quot;app&quot;:&quot;0&quot;},&quot;id&quot;:&quot;93b776d3eb3f3ce9d9bda7164bc8af3acacff7b6&quot;,&quot;listen_addr&quot;:&quot;tcp://0.0.0.0:26656&quot;,&quot;network&quot;:&quot;euler-6&quot;,&quot;version&quot;:&quot;0.32.7&quot;,&quot;channels&quot;:&quot;4020212223303800&quot;,&quot;moniker&quot;:&quot;anon&quot;,&quot;other&quot;:{&quot;tx_index&quot;:&quot;on&quot;,&quot;rpc_address&quot;:&quot;tcp://0.0.0.0:26657&quot;}},&quot;sync_info&quot;:{&quot;latest_block_hash&quot;:&quot;686B4E65415D4E56D3B406153C965C0897D0CE27004E9CABF65064B6A0ED4240&quot;,&quot;latest_app_hash&quot;:&quot;0A1F6D260945FD6E926785F07D41049B8060C60A132F5BA49DD54F7B1C5B2522&quot;,&quot;latest_block_height&quot;:&quot;4553&quot;,&quot;latest_block_time&quot;:&quot;2019-11-24T09:49:19.771375108Z&quot;,&quot;catching_up&quot;:false},&quot;validator_info&quot;:{&quot;address&quot;:&quot;66098853CF3B61C4313DD487BA21EDF8DECACDF0&quot;,&quot;pub_key&quot;:{&quot;type&quot;:&quot;tendermint/PubKeyEd25519&quot;,&quot;value&quot;:&quot;uZrCCdZTJoHE1/v+EvhtZufJgA3zAm1bN4uZA3RyvoY=&quot;},&quot;voting_power&quot;:&quot;0&quot;}}
+</code></pre>
+
+<p>Your node has started to sync. If that didn&rsquo;t happen, check your config.toml file located at <code>$DAEMON_HOME/config/config.toml</code> and add at least a couple of addresses to <persistent_peers = ""> and <seeds = "">, some of those you can find on our <a href="https://ai.cybercongress.ai/">forum</a>.</p>
+
+<p>Additional information about the chain is available via an API endpoint at: <code>localhost:26657</code> (access via your browser)</p>
+
+<p>E.G. the number of active validators is available at: <code>localhost:26657/validators</code></p>
+
+<p>If your node did not launch correctly from the genesis, you need to set the current link to cosmosd for cyber daemon:</p>
+
+<pre><code class="language-bash">ln -s $DAEMON_HOME/upgrade_manager/genesis current
+</code></pre>
+
+<p>If you joined the testnet <strong>after</strong> a chain upgrade happened, you must point your current link to a new location (with an approptiatly upgraded binary file):</p>
+
+<pre><code class="language-bash">mkdir $DAEMON_HOME/upgrade_manager/upgrades
+cp &lt;path_to_upgraded_cyberd&gt; $DAEMON_HOME/upgrade_manager/upgrades
+ln -s $DAEMON_HOME/upgrade_manager/upgrades current
+</code></pre>
+
+<h2 id="validator-start">Validator start</h2>
+
+<p>After your node has successfully sycned, you can run your validator.</p>
+
+<h3 id="prepare-a-staking-address">Prepare a staking address</h3>
+
+<p>We included ~1 million Ethereum addresses, over 10000 Cosmos addresses and all of <code>euler-4</code> validators addresses into the genesis file. This means that there&rsquo;s a huge chance that you already have some EUL tokens. Here are 3 ways to check this:</p>
+
+<p>If you already have a cyberd address with EUL and know the seed phrase or your private key, just restore it into your local Keystore:</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;your_key_name&gt; --recover
+cyberdcli keys show &lt;your_key_name&gt;
+</code></pre>
+
+<p>If you have an Ethereum address that had ~0.2Eth or more at block 8080808 (on the ETH network), you probably received a gift and may import your Ethereum private key. To check your gift balance, paste your Ethereum address on <a href="https://cyber.page">cyber.page</a>.</p>
+
+<blockquote>
+<p>Please do not import high-value Ethereum accounts. This is not safe! cyberd software is new and has not been audited yet.</p>
+</blockquote>
+
+<pre><code class="language-bash">cyberdcli keys add private &lt;your_key_name&gt;
+cyberdcli keys show &lt;your_key_name&gt;
+</code></pre>
+
+<p>If you want to create a new account, use the command below:
+(You should send coins to that address to bound them later during the launch of the validator)</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;your_key_name&gt;
+cyberdcli keys show &lt;your_key_name&gt;
+</code></pre>
+
+<p>You could use your Ledger device, with the Cosmos app installed on it to sign and store cyber addresses: <a href="https://github.com/cybercongress/cyberd/blob/0.1.5/docs/cyberd_Ledger_guide.md">guide here</a>.
+In most cases use the &ndash;ledger flag, with your commands:</p>
+
+<pre><code class="language-bash">cyberdcli keys add &lt;your_key_name&gt; --ledger
+</code></pre>
+
+<p><strong><your_key_name></strong> is any name you pick to represent this key pair.
+You have to refer to this parameter <your_key_name> later when you use the keys to sign transactions.
+It will ask you to enter your password twice to encrypt the key.
+You will also need to enter your password when you use your key to sign any transaction.</p>
+
+<p>The command returns the address, a public key and a seed phrase, which you can use to
+recover your account if you forget your password later.
+Keep the seed phrase at a safe place (not in hot storage) in case you have to use it.</p>
+
+<p>The address shown here is your account address. Let’s call this <strong><your_account_address></strong>.
+It stores your assets.</p>
+
+<p><strong>Important note</strong>: Starting with v.38 cosmos-SDK uses os-native keyring to store all your keys. We&rsquo;ve noticed that in certain cases it does not work well by default (for example if you don&rsquo;t have any GUI installed on your machine). If during the execution of the <code>cyberdcli keys add</code> command, you are getting this type of error:</p>
+
+<pre><code class="language-bash">panic: No such  interface 'org.freedesktop.DBus.Properties' on object at path /
+
+goroutine 1 [running]:
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.writeInfo(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x147a6c0, 0xc000f1c780, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:479 +0x38c
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.writeLocalKey(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x147a6c0, 0xc000f1c780, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:465 +0x189
+github.com/cosmos/cosmos-sdk/crypto/keys.baseKeybase.CreateAccount(0x1307a18, 0x1307a10, 0xc000b37160, 0x1, 0x1, 0xc000b37170, 0x1, 0x1, 0x146aa00, 0xc000b15630, ...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keybase_base.go:171 +0x192
+github.com/cosmos/cosmos-sdk/crypto/keys.keyringKeybase.CreateAccount(...)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/crypto/keys/keyring.go:107
+github.com/cosmos/cosmos-sdk/client/keys.RunAddCmd(0xc000f0b400, 0xc000f125f0, 0x1, 0x1, 0x148dcc0, 0xc000aca550, 0xc000ea75c0, 0xc000ae1c08, 0x5e93b7)
+    /root/go/pkg/mod/github.com/cosmos/cosmos-sdk@v0.38.1/client/keys/add.go:273 +0xa8b
+... etc
+</code></pre>
+
+<p>You will have to use another keyring backend to keep your keys. Here are 2 options: store the files within the cli folder or a <code>pass</code> manager.</p>
+
+<p>Setting keyring backend to a <strong>local file</strong>:</p>
+
+<p>Execute:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend file
+</code></pre>
+
+<p>As a result you migth see following: <code>configuration saved to /root/.cybercli/config/config.toml</code></p>
+
+<p>Execute:</p>
+
+<pre><code class="language-bash">cyberdcli config --get keyring-backend
+</code></pre>
+
+<p>The result should be the following:</p>
+
+<pre><code class="language-bash">user@node:~# cyberdcli config --get keyring-backend
+file
+</code></pre>
+
+<p>This means that you&rsquo;ve set your keyring-backend to a local file. <em>Note</em>, in this case, all the keys in your keyring will be encrypted using the same password. If you would like to set up a unique password for each key, you should set a unique <code>--home</code> folder for each key. To do that, just use <code>--home=/&lt;unique_path_to_key_folder&gt;/</code> with setup keyring backend and at all interactions with keys when using cyberdcli:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend file --home=/&lt;unique_path_to_key_folder&gt;/
+cyberdcli keys add &lt;your_second_key_name&gt; --home=/&lt;unique_path_to_key_folder&gt;/
+cyberdcli keys list --home=/&lt;unique_path_to_key_folder&gt;/
+</code></pre>
+
+<p>Set keyring backend to <a href="https://github.com/cosmos/cosmos-sdk/blob/9cce836c08d14dc6836d07164dd964b2b7226f36/crypto/keyring/doc.go#L30"><strong>pass manager</strong></a>:</p>
+
+<p>Pass utility uses a GPG key to encrypt your keys (but again, it uses the same GPG for all the keys). To install and generate your GPG key you should follow <a href="https://www.passwordstore.org/">this guide</a> or this very <a href="http://tuxlabs.com/?p=450">detailed guide</a>. When you&rsquo;ll get your <code>pass</code> set, configure <code>cyberdcli</code> to use it as a keyring backend:</p>
+
+<pre><code class="language-bash">cyberdcli config keyring-backend pass
+</code></pre>
+
+<p>And verify that all has been set as planned:</p>
+
+<pre><code class="language-bash">cyberdcli config --get keyring-backend
+pass
+</code></pre>
+
+<h4 id="send-the-create-validator-transaction">Send the create validator transaction</h4>
+
+<p>Validators are actors on the network committing to new blocks by submitting their votes.
+This refers to the node itself, not a single person or a single account.
+Therefore, the public key here is referring to the nodes public key,
+not the public key of the address you have just created.</p>
+
+<p>To get the nodes public key run the following command:</p>
+
+<pre><code class="language-bash">cyberd tendermint show-validator
+</code></pre>
+
+<p>It will return a bech32 public key. Let’s call it <strong><your_node_pubkey></strong>.
+The next step is to declare a validator candidate.
+The validator candidate is the account which stakes the coins.
+So the validator candidate is the account this time.
+To declare a validator candidate, run the following command adjusting the staked amount and the other fields:</p>
+
+<pre><code class="language-bash">cyberdcli tx staking create-validator \
+  --amount=10000000eul \
+  --min-self-delegation &quot;1000000&quot; \
+  --pubkey=&lt;your_node_pubkey&gt; \
+  --moniker=&lt;your_node_nickname&gt; \
+  --trust-node \
+  --from=&lt;your_key_name&gt; \
+  --commission-rate=&quot;0.10&quot; \
+  --commission-max-rate=&quot;0.20&quot; \
+  --commission-max-change-rate=&quot;0.01&quot; \
+  --chain-id=euler-6
+</code></pre>
+
+<h4 id="verify-that-you-are-validating">Verify that you are validating</h4>
+
+<pre><code class="language-bash">cyberdcli query staking validators --trust-node=true
+</code></pre>
+
+<p>If you see your <code>&lt;your_node_nickname&gt;</code> with status <code>Bonded</code> and Jailed <code>false</code>, everything is good.
+You are validating the network.</p>
+
+<h2 id="maintenance-of-the-validator">Maintenance of the validator</h2>
+
+<h3 id="jailing">Jailing</h3>
+
+<p>If your validator got slashed, it will get jailed.
+If it happens the operator must unjail the validator manually:</p>
+
+<pre><code class="language-bash">cyberdcli tx slashing unjail --from=&lt;your_key_name&gt; --chain-id euler-6
+</code></pre>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#join-cyberd-testnet-as-a-validator">Join Cyberd testnet as a Validator</a>
+<ul>
+<li><a href="#prepare-your-server">Prepare your server</a></li>
+<li><a href="#validator-setup">Validator setup</a>
+<ul>
+<li><a href="#third-party-software">Third-party software</a></li>
+<li><a href="#installing-go">Installing Go</a>
+<ul>
+<li><a href="#installing-nvidia-drivers">Installing Nvidia drivers</a></li>
+</ul></li>
+<li><a href="#install-cuda-toolkit">Install CUDA toolkit</a></li>
+<li><a href="#launching-cyberd-fullnode">Launching Cyberd fullnode</a></li>
+<li><a href="#setup-cyberd-as-a-service-ubuntu">Setup cyberd as a service (Ubuntu)</a></li>
+</ul></li>
+<li><a href="#validator-start">Validator start</a>
+<ul>
+<li><a href="#prepare-a-staking-address">Prepare a staking address</a>
+<ul>
+<li><a href="#send-the-create-validator-transaction">Send the create validator transaction</a></li>
+<li><a href="#verify-that-you-are-validating">Verify that you are validating</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#maintenance-of-the-validator">Maintenance of the validator</a>
+<ul>
+<li><a href="#jailing">Jailing</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

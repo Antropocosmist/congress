@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>How to import cyberlinks from `euler-5` to `euler-6`</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="savetheales" />
+
+<link rel="canonical" href="../how-to-import-cyberlinks-from-euler-5-to-euler-6/" />
+<link rel="alternate" href="../how-to-import-cyberlinks-from-euler-5-to-euler-6/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="How to import cyberlinks from `euler-5` to `euler-6`" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/how-to-import-cyberlinks-from-euler-5-to-euler-6/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="How to import cyberlinks from `euler-5` to `euler-6`" />
+<meta name="twitter:creator" content="savetheales" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../highlight/github-gist.css" />
+<link rel="stylesheet" href="../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../img/newlogo.png">
+<link rel="alternate feed" href="../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../asciinema/asciinema-player.js"></script>
+<script src="../highlight/highlight.js"></script>
+
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+  <header class="header-has-logo"  id="stars" >
+        <div class="container cf">
+          <h1 class="pull-left logo margin-bottom">
+            <a href="../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../"><span class='logo-text'>cyber~Congress</span></a>
+          </h1>
+          <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf">
+              <li><a href="../docs/go-cyber/cyberd/"
+                  >Docs</a></li>
+              <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+              <li><a href="../post" >Blog</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+      </header>
+    
+
+  <div class="container">
+
+    
+
+
+    <div class="post">
+      <h1>How to import cyberlinks from `euler-5` to `euler-6`</h1>
+      <p class="date">by savetheales on 2020-04-19</p>
+
+      <p>
+</p>
+
+      
+
+<p>This guide will explain several ways to migrate your cyberlinks.</p>
+
+<p>Following <a href="https://cybercongress.ai/euler-6-migration/">our migration proposal</a>, the <a href="https://io.cybernode.ai/api/v0/dag/get?arg=bafyreibnn7bfilbmkrxm2rwk5fe6qzzdvm2xen34cjdktdoex4uylb76z4/">IPLD structure</a> with the links made by masters has been prepared and is ready to be moved across testnets. These are the tools masters can use to migrate their links from <code>euler-5</code> to <code>euler-6</code> network, depending on how you created your links:</p>
+
+<h2 id="all-of-my-cyberlinks-were-done-using-a-ledger">All of my cyberlinks were done using a Ledger</h2>
+
+<p>Nice! Connect your Ledger device to the <a href="https://cyber.page/pocket">cyber.page app and pocket it</a> by clicking the robot icon in the top right corner and pushing the <code>put ledger</code> button. If you don&rsquo;t see the button, your cookies are saved and you should just skip the first step.</p>
+
+<ol>
+<li>Your Ledger should be connected to the computer and the cosmos app should be open:</li>
+</ol>
+
+<p><img src="main_page.png" alt="connetc_ledger" /></p>
+
+<ol>
+<li>After a successful connection, you should see your <code>cyber</code> and <code>cosmos</code> addresses and the box with the proposal to import the cyberlinks using your Ledger (if you don&rsquo;t see this box, but you are sure that you have used your Ledger to cyberlink, click on the top box with the addresses and a <code>Drop key</code> button in the bottom will appear. Click it and reload the page):</li>
+</ol>
+
+<p><img src="ledger.png" alt="pocket" /></p>
+
+<ol>
+<li>Ledgers memory capability only allows signing 7 messages at a time. This means that you need to make several transactions to import all your links if they amount to more than 7:</li>
+</ol>
+
+<p><img src="sign2.png" alt="" /></p>
+
+<ol>
+<li>Click on the first cyberlink and push the <code>sign</code> button to generate the transaction:</li>
+</ol>
+
+<p><img src="sign3.png" alt="" /></p>
+
+<ol>
+<li>Confirm the transaction data on your Ledger device, press <code>Fuck Google</code> on the screen, rinse and repeat until done.</li>
+</ol>
+
+<h2 id="all-my-cyberlinks-were-done-using-the-cli">All my cyberlinks were done using the CLI</h2>
+
+<p>1.In this case, import your <code>cyber</code> address manually by clicking the <code>put read-only address</code> button:</p>
+
+<p><img src="main_page.png" alt="connetc_ledger" /></p>
+
+<ol>
+<li>You should see a box that says: <code>You created N cyberlinks in euler-5. Import cli</code>:</li>
+</ol>
+
+<p><img src="usecli.png" alt="" /></p>
+
+<ol>
+<li><p>Click on the section. The <code>tx_links.json</code> file should start to download automatically. If not, try reloading the page.</p></li>
+
+<li><p>Open the console and sign the transaction file with your account (obviosuly your Ledger should be connected with the Cosmos app opened):</p></li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx sign &lt;PATH_TO_TX_LINK&gt;/tx_links.json --from &lt;account_name&gt; --output-document &lt;PATH_TO_TX_LINK&gt;/tx_links_signed.json --chain-id euler-6
+</code></pre>
+
+<ol>
+<li>The output document is a signed transaction ready for broadcasting. Let&rsquo;s send it to the network:</li>
+</ol>
+
+<pre><code class="language-bash">cyberdcli tx broadcast  &lt;PATH_TO_TX_LINK&gt;/tx_links_signed.json --chain-id euler-6
+</code></pre>
+
+<ol>
+<li>After the transaction has been confirmed by the network, you will see your <code>euler-5</code> links in the <code>euler-6</code> network.</li>
+</ol>
+
+<h2 id="all-of-my-cyberlinks-were-done-using-cyb-virus">All of my cyberlinks were done using cyb~Virus</h2>
+
+<ol>
+<li><p>Open the cyb~Virus extension and export your private key</p></li>
+
+<li><p>You need to import your private key into cyber, using the CLI. Open the console and import the key:</p></li>
+</ol>
+
+<pre><code class="language-bash"> cyberdcli keys add private &lt;your_key_name&gt;
+</code></pre>
+
+<p><your_key_name> is just any random nickname you choose. The system will ask you to enter a passphrase, you should do this.</p>
+
+<ol>
+<li>Next, type in the following command:</li>
+</ol>
+
+<pre><code class="language-bash"> cyberdcli keys list
+</code></pre>
+
+<p>This will return your cyber address (under the name you picked earlier). Copy the <code>cyber</code> address.</p>
+
+<ol>
+<li>Go to the <code>All my cyberlinks were done using the CLI</code> section of this document and do steps 1 - 6.</li>
+</ol>
+
+
+      
+          <h2 id="comments">Comments</h2>
+          <div id='discourse-comments'></div>
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
+              discourseEmbedUrl: 'https://ipfs.io/blog/how-to-import-cyberlinks-from-euler-5-to-euler-6' };
+              if (window.location.hostname === 'blog.ipfs.io') {
+                (function() {
+                  var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                  d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+              } else {
+                 
+                 
+                 document.getElementById('comments').style.display = 'none';
+                 document.getElementById('discourse-comments').style.display = 'none';
+              }
+          </script>
+      
+    </div>
+  </div> 
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

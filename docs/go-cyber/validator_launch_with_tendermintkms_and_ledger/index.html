@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" />
+<link rel="alternate" href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Validator Launch With Tendermint K M S and Ledger
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2fgo-cyber\2fvalidator_launch_with_tendermintkms_and_ledger\2f "] {
+      color: #36d6ae;
+  }
+  </style>
+
+<ul>
+<li><a href="../../../docs/go-cyber/cyberd/">Whitepaper</a></li>
+<li>Usage:
+
+<ul>
+<li><a href="../../../docs/go-cyber/run_validator/">Run the validator</a></li>
+<li><a href="../../../docs/go-cyber/supported_gpu_list/">Supported GPUs list</a></li>
+<li><a href="../../../docs/go-cyber/ultimate-commands-guide/">CLI guide</a></li>
+<li><a href="../../../docs/go-cyber/get_cyb/">Get EUL</a></li>
+<li><a href="../../../docs/go-cyber/port_forwarding_guide/">Port forwarding</a></li>
+<li><a href="../../../docs/go-cyber/cyberd_ledger_guide/">Cyberd Ledger guide</a></li>
+<li><a href="../../../docs/go-cyber/multisig_guide/">Multisig guide</a></li>
+<li><a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/">Run validator with Tendermint and Ledger</a></li>
+<li><a href="../../../docs/go-cyber/setup_cyberd_configuration/">Set up config.toml in the right way</a></li>
+</ul></li>
+<li>Dev environment:
+
+<ul>
+<li><a href="../../../docs/go-cyber/setup_dev_env/">Setup development environment</a></li>
+</ul></li>
+<li>Specs:
+
+<ul>
+<li><a href="../../../docs/go-cyber/rpc/">RPC</a></li>
+<li><a href="../../../docs/go-cyber/keystore/">Keystore</a></li>
+</ul></li>
+<li><a href="../../../docs/go-cyber/changelog/">CHANGELOG</a></li>
+<li><a href="../../../docs/go-cyber/contributing/">CONTRIBUTING</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="validator-launch-with-tendermint-kms-leger-nano">Validator launch with Tendermint KMS + Leger Nano</h1>
+
+<p>In this guide, you&rsquo;ll find the full information on how to set up your validator at cyberd by using Tenderming KMS and Ledger nano S as a keystore.</p>
+
+<h2 id="preparing-your-ledger">Preparing your Ledger</h2>
+
+<p>We assume you have one. If not, only buy them from trusted sources!</p>
+
+<p>First of all, we&rsquo;ll need to prepare the Ledger to be able to work with Tendermint KMS.
+We need to install the Tendermint app onto the Ledger using Ledger Live.</p>
+
+<p><em>Note: at the moment, you might need to enable the <code>developer mode</code> in Ledger Live settings</em></p>
+
+<p>If you have (initially) set up your Ledger on a different machine than the one with cyberd, you should make sure that the Ledger device is recognized by Legder Live. The best way to do this is by installing <a href="https://shop.ledger.com/pages/ledger-live">Ledger Live</a> onto that particular machine and attempting to connect the Ledger device to it. This will show any possible issues or/and error codes (if they exist, of course). To deal with them, please use the <a href="https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues">Fix connection issues</a> guide from Ledger.</p>
+
+<h2 id="installing-tendermint-kms-onto-the-node">Installing Tendermint KMS onto the node</h2>
+
+<p>Normally, this has to be done according to the Tendermint <a href="https://github.com/tendermint/kms">guide</a>, but we will need a few extras (all instructions have been tested on KMS v0.6.3).</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>You will need the following prerequisites:</p>
+
+<ul>
+<li><strong>Rust</strong> (stable; 1.35+) <a href="https://rustup.rs/">install</a></li>
+<li><strong>C compiler</strong>: e.g. gcc, clang</li>
+<li><strong>pkg-config</strong></li>
+<li><strong>libusb</strong> (1.0+) : for Debian/Ubuntu: <code>apt install libusb-1.0-0-dev</code></li>
+</ul>
+
+<p>NOTE (x86_64 only): Configure <code>RUSTFLAGS</code> environment variable:
+<code>export RUSTFLAGS=-Ctarget-feature=+aes,+ssse3</code>  (generally it would be necessary to add these flags to ~/.bash-profile or ~/.profile to make them available after re-login).</p>
+
+<p>We are ready to install KMS. There are 2 ways to do this: compile from source or install with Rusts <code>cargo-install</code>. We&rsquo;ll use the first option.</p>
+
+<h3 id="compiling-from-source-code">Compiling from source code</h3>
+
+<p><code>tmkms</code> can be compiled directly from the git repository source code, using the following commands:</p>
+
+<pre><code class="language-js">git clone https://github.com/tendermint/kms.git &amp;&amp; cd kms
+cargo build --release --features=ledgertm,softsign
+</code></pre>
+
+<p>If successful, it will produce the <code>tmkms</code> executable located at:
+<code>./target/release/tmkms</code>.</p>
+
+<h2 id="kms-configuration">KMS configuration</h2>
+
+<p>After compiling, we should create a settings file - <code>tmkms.toml</code>, the <code>secret_connection.key</code> file and adjust cyberd node settings.</p>
+
+<p>First of all, we need to generate a connection key that will be used for communication with the Ledger device. In order to do this <code>cd</code> to the directory with tmkms executable and run the following (path to save the file is optional):</p>
+
+<pre><code class="language-py">cd &lt;your_KMS_directory&gt;/target/release/
+./tmkms softsign keygen ~/.tmkms/secret_connection.key
+</code></pre>
+
+<p>Once you are done with the connection key, proceed to the config file. It could be created anywhere. It is possible to specify the path to it during tmkms launch.</p>
+
+<p>Here is an example of the <code>tmkms.toml</code> config file, working with v0.6.3 of KMS:</p>
+
+<pre><code class="language-py">[[chain]]
+id = &quot;&lt;current_chain_id&gt;&quot;
+key_format = { type = &quot;bech32&quot;, account_key_prefix = &quot;cyberpub&quot;, consensus_key_prefix = &quot;cybervalconspub&quot; }
+## Validator configuration
+[[validator]]
+addr = &quot;tcp://localhost:26658&quot;
+chain_id = &quot;&lt;current_chain_id&gt;&quot;
+reconnect = true # true is the default
+secret_key = &quot;&lt;path_to_secret_connection.key&gt;&quot;
+# enable the `ledger` feature
+[[providers.ledgertm]]
+chain_ids = [&quot;&lt;current_chain_id&gt;&quot;]
+</code></pre>
+
+<h2 id="retrieve-the-validator-key">Retrieve the validator key</h2>
+
+<p>The last step is to retrieve the validator key that you will be using in cyberd. The Ledger device must be connected, unlocked and has the Tendermint app opened on it.</p>
+
+<p>Start <code>tmkms</code> with the following command:</p>
+
+<pre><code class="language-c">tmkms start -c ~/.tmkms/tmkms.toml
+</code></pre>
+
+<p>The output should look something like this:</p>
+
+<pre><code class="language-bash">13:28:35 [info] tmkms 0.6.3 starting up...
+13:28:35 [info] [keyring:ledgertm] added consensus key cybervalconspub1zcjduepq8jv0uxx2fw4ur6gj2r3wgs374n6ys5edh9pc4rseqqcaq2yyzy2q0fhx5q
+13:28:35 [info] KMS node ID: C0E0DBA8AA82D597E8F893993E66398DDE8F89B0
+</code></pre>
+
+<p>KMS may complain about the impossibility to connect to cyberd. That&rsquo;s fine, we&rsquo;ll fix this in the next section.</p>
+
+<p>The output indicates the validator key that is linked to this particular device:</p>
+
+<pre><code class="language-bash">cybervalconspub1zcjduepq8jv0uxx2fw4ur6gj2r3wgs374n6ys5edh9pc4rseqqcaq2yyzy2q0fhx5q
+</code></pre>
+
+<p>Take <em>note</em> of the validator pubkey that appears on your screen. We will use it in the next section.</p>
+
+<h2 id="configuration-of-cyberd">Configuration of Cyberd</h2>
+
+<p>Before we start validating, it&rsquo;s necessary to enanble a communication port at <code>cyberd</code> itself.  In the config file: <code>&lt;your_cyberd_location&gt;/cyberd/config/config.toml</code>, modify the <code>priv_validator_laddr</code> value to create a listening address/port. The port should be set according with the <code>[[validator]] addr =</code> value of your <code>tmkms.toml</code> file.</p>
+
+<p>Example of <code>config.toml</code>:</p>
+
+<pre><code class="language-py"># TCP or UNIX socket address for Tendermint to listen on for
+# connections from an external PrivValidator process
+priv_validator_laddr = &quot;tcp://127.0.0.1:26658&quot;
+</code></pre>
+
+<p><em>NOTE: if you will try to launch cyberd after enabling  <code>priv_validator_laddr</code>, and without the <code>tmkms</code> app running simultaneously, it will likely NOT start.</em></p>
+
+<p>To process further, we assume that <code>cyberd</code> node is synced on your machine and there were no validators created previously on that particular node. Also, you should have an imported account to <code>cyberdcli</code> that has enough bandwidth and EUL to start validator.</p>
+
+<p>We also assume that the Ledger device is connected, unlocked and has the Tendermint app open.</p>
+
+<p>One last thing: <code>tmkms</code> should be launched under a different console session on the same machine.</p>
+
+<h2 id="run-validator">Run Validator</h2>
+
+<p>TO DO</p>
+
+<h2 id="maintenance-of-validator">Maintenance of validator</h2>
+
+<p>TO DO</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#validator-launch-with-tendermint-kms-leger-nano">Validator launch with Tendermint KMS + Leger Nano</a>
+<ul>
+<li><a href="#preparing-your-ledger">Preparing your Ledger</a></li>
+<li><a href="#installing-tendermint-kms-onto-the-node">Installing Tendermint KMS onto the node</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#compiling-from-source-code">Compiling from source code</a></li>
+</ul></li>
+<li><a href="#kms-configuration">KMS configuration</a></li>
+<li><a href="#retrieve-the-validator-key">Retrieve the validator key</a></li>
+<li><a href="#configuration-of-cyberd">Configuration of Cyberd</a></li>
+<li><a href="#run-validator">Run Validator</a></li>
+<li><a href="#maintenance-of-validator">Maintenance of validator</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

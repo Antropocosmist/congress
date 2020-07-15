@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.54.0" />
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+  <link rel="canonical" href="./" />
+  <link rel="alternate" href="./" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./highlight/github-gist.css" />
+<link rel="stylesheet" href="./asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="./img/newlogo.png">
+<link rel="alternate feed" href="./index.xml" type="application/rss+xml"  title="IPFS Blog" />
+
+<script src="./asciinema/asciinema-player.js"></script>
+<script src="./highlight/highlight.js"></script>
+<script src="./statistics/statistics.js"></script>
+<script src="./timer/timer.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body class="home">
+    <header class="header-has-logo"  id="stars" >
+  <div class="container cf">
+    <h1 class="pull-left logo margin-bottom">
+      <a href="./" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+      <a href="./"><span class='logo-text'>cyber~Congress</span></a>
+    </h1>
+    <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+      <input id="menu-toggle" type="checkbox" class="menu-toggle">
+      <label for="menu-toggle"></label>
+      <ul class="list-unstyled list-inline cf">
+        
+        <li><a href="./docs/go-cyber/cyberd/"
+            >Docs</a></li>
+        <li><a href="http://ai.cybercongress.ai/"
+            >Forum</a>
+        </li>
+        <li><a href="./post" >Blog</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hero hero-home">
+      <div class="hero-text">
+        <h2 class="headline-main">like google but cyber</h2>
+        <span class="divider"></span>
+        
+
+        <div class='subhead-last-block'>
+          <div id="countdown" class="countdown">
+            <div class="countdown-number">
+              <span class="days countdown-time"></span>
+            </div>
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+            </div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+        <div id="deadline-message" class="deadline-message">
+          <div class='subhead-last-block'>
+            <span class="subhead-main"><span id='testnet'>euler-</span> at block </span>
+            <span class='last-block' id='lastBlock'>0</span>
+          </div>
+        </div>
+        <a class="button-gravity" href="./docs/go-cyber/run_validator/">Become a hero</a>
+        <a class="button-gravity" target="_blank" href="https://cyber.page/">cyber.page</a>
+        <a class="button-gravity" target="_blank" href="https://ipfs.io/ipfs/QmQ1Vong13MDNxixDyUdjniqqEj8sjuNEBYMyhQU4gQgq3">Whitepaper</a>
+      </div>
+      <div id="deadline-statiscs" class="deadline-message">
+        <div class='statiscs'>
+          <div class='grid-flex-container'>
+            <div class='grid-flex-cell card'>
+              <p class='card-value' id='cyberlinks'>0</p>
+              <p class='card-value'>cyberlinks</p>
+            </div>
+            <div class='grid-flex-cell card'>
+              <p id='contentIds'>0</p>
+              <p>content ids</p>
+            </div>
+            <div class='grid-flex-cell card'>
+              <p id='accounts'>0</p>
+              <p>accounts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+  
+</header>
+<script>
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      total: t,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds
+    };
+  }
+
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector(".days");
+    var hoursSpan = clock.querySelector(".hours");
+    var minutesSpan = clock.querySelector(".minutes");
+    var secondsSpan = clock.querySelector(".seconds");
+
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+
+      if (t.total <= 0) {
+        document.getElementById("countdown").className = "hidden";
+        document.getElementById("deadline-message").className = "visible";
+        document.getElementById("deadline-statiscs").className = "visible";
+        clearInterval(timeinterval);
+        return true;
+      }
+
+      daysSpan.innerHTML = t.days + "d";
+      hoursSpan.innerHTML = ("0" + t.hours + "h").slice(-3);
+      minutesSpan.innerHTML = ("0" + t.minutes + "m").slice(-3);
+      secondsSpan.innerHTML = ("0" + t.seconds + "s").slice(-3);
+    }
+
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+
+  }
+
+  var resultGMT;
+  var offset = new Date().getTimezoneOffset();
+  if (offset < 0)
+    resultGMT = "GMT+" + (offset / -60);
+  else
+    resultGMT = "GMT-" + offset / 60;
+
+  var deadline = "December 20 2019 21:00:00 " + resultGMT;
+  
+  
+  initializeClock("countdown", deadline);
+</script>
+
+
+    
+
+    <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+</body>
+
+</html>

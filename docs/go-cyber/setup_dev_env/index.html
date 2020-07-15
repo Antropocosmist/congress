@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/go-cyber/setup_dev_env/" />
+<link rel="alternate" href="../../../docs/go-cyber/setup_dev_env/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/go-cyber/setup_dev_env/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Setup Dev Env
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2fgo-cyber\2fsetup_dev_env\2f "] {
+      color: #36d6ae;
+  }
+  </style>
+
+<ul>
+<li><a href="../../../docs/go-cyber/cyberd/">Whitepaper</a></li>
+<li>Usage:
+
+<ul>
+<li><a href="../../../docs/go-cyber/run_validator/">Run the validator</a></li>
+<li><a href="../../../docs/go-cyber/supported_gpu_list/">Supported GPUs list</a></li>
+<li><a href="../../../docs/go-cyber/ultimate-commands-guide/">CLI guide</a></li>
+<li><a href="../../../docs/go-cyber/get_cyb/">Get EUL</a></li>
+<li><a href="../../../docs/go-cyber/port_forwarding_guide/">Port forwarding</a></li>
+<li><a href="../../../docs/go-cyber/cyberd_ledger_guide/">Cyberd Ledger guide</a></li>
+<li><a href="../../../docs/go-cyber/multisig_guide/">Multisig guide</a></li>
+<li><a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/">Run validator with Tendermint and Ledger</a></li>
+<li><a href="../../../docs/go-cyber/setup_cyberd_configuration/">Set up config.toml in the right way</a></li>
+</ul></li>
+<li>Dev environment:
+
+<ul>
+<li><a href="../../../docs/go-cyber/setup_dev_env/">Setup development environment</a></li>
+</ul></li>
+<li>Specs:
+
+<ul>
+<li><a href="../../../docs/go-cyber/rpc/">RPC</a></li>
+<li><a href="../../../docs/go-cyber/keystore/">Keystore</a></li>
+</ul></li>
+<li><a href="../../../docs/go-cyber/changelog/">CHANGELOG</a></li>
+<li><a href="../../../docs/go-cyber/contributing/">CONTRIBUTING</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="setup-development-environment">Setup development environment</h1>
+
+<h2 id="prestart">Prestart</h2>
+
+<ul>
+<li>Install <a href="https://golang.org/doc/install">Golang 1.11+</a></li>
+<li>Install <a href="https://www.jetbrains.com/go/">GoLand IDE</a></li>
+</ul>
+
+<h2 id="import-project-to-goland">Import project to GoLand</h2>
+
+<p>Open Project in GoLand by selecting: Open Project -&gt; selecting cloned repository root folder
+<img src="https://ipfs.io/ipfs/QmYQxSKzQkkpCofuHmbJZqYoTo4cuvHQuUNYkJRBKgSduL" alt="Open project" /></p>
+
+<p>Enable <strong>go mod</strong> package management
+<img src="https://ipfs.io/ipfs/Qmaz3o7LjAG9bNhE8VkHSUokM8EqgfcVXT9R5qB3XxLZSe" alt="Enable go mod" />
+Wait for dependency downloading and indexation</p>
+
+<h2 id="add-run-configurations">Add Run Configurations</h2>
+
+<p>###Add testnet configuration
+<img src="../../../docs/go-cyber/img/generate-testnet.png" alt="Generate testnet" /></p>
+
+<h3 id="add-run-configuration-with-gpu">Add run configuration with GPU</h3>
+
+<p><img src="../../../docs/go-cyber/img/run-node.png" alt="Run node" /></p>
+
+<h4 id="notes-about-gpu-dev-environment">Notes about GPU dev environment</h4>
+
+<pre><code>TO DO
+</code></pre>
+
+<h3 id="add-run-configuration-with-cpu">Add run configuration with CPU</h3>
+
+<p><img src="../../../docs/go-cyber/img/run-node-cpu.png" alt="Run node CPU" /></p>
+
+<pre><code>start --allow-search=true --compute-rank-on-gpu=false --home=./mytestnet/node0/cyberd
+</code></pre>
+
+<h3 id="add-reset-configuration">Add reset configuration</h3>
+
+<p><img src="../../../docs/go-cyber/img/reset-node-data.png" alt="Reset node data" /></p>
+
+<h2 id="running-node">Running Node</h2>
+
+<h3 id="generate-testnet">Generate testnet</h3>
+
+<p>Before node running, setup testnet with run configuration <strong>D TESTNET</strong>.
+- Folder <strong>/mytestnet</strong> will be added to the project root.
+- In <strong>/node0</strong> subfolder you can find daemon and cli folders.
+- Daemon folder will contain validator node data.
+- In <strong>/cyberdcli</strong> folder you can find initial validator seed.</p>
+
+<pre><code>mytestnet
+├── gentxs
+│   └── node0.json
+└── node0
+    ├── cyberd
+    │   ├── config
+    │   │   ├── config.toml
+    │   │   ├── genesis.json
+    │   │   ├── node_key.json
+    │   │   └── priv_validator_key.json
+    │   └── data
+    │       ├── priv_validator_state.json
+    └── cyberdcli
+        └── key_seed.json
+</code></pre>
+
+<h3 id="run-with-gpu-or-cpu">Run with GPU or CPU</h3>
+
+<p>After, just run <strong>RUN</strong> node configuration.</p>
+
+<pre><code>I[2019-05-15|15:06:56.735] Starting ABCI with Tendermint                module=main 
+I[2019-05-15|15:06:56.789] Loading mem state                            module=main 
+I[2019-05-15|15:06:56.789] App loaded                                   module=main time=118.743µs
+I[2019-05-15|15:06:56.793] Search index loaded!                         module=main time=3.416449ms
+I[2019-05-15|15:06:56.793] Search index starting listen new links       module=main 
+I[2019-05-15|15:06:56.793] Search index starting listen new rank        module=main 
+I[2019-05-15|15:06:56.910] Applying genesis                             module=main 
+I[2019-05-15|15:06:56.914] File with links not found. Empty set will be used module=main 
+I[2019-05-15|15:06:56.914] Genesis applied                              module=main time=3.420262ms
+E[2019-05-15|15:06:56.947] Couldn't connect to any seeds                module=p2p 
+I[2019-05-15|15:07:02.014] Executed block                               module=state height=1 validTxs=0 invalidTxs=0
+I[2019-05-15|15:07:02.014] Rank calculated                              module=main time=2.069µs links=0 cids=0 hash=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+I[2019-05-15|15:07:02.047] Committed state                              module=state height=1 txs=0 appHash=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+I[2019-05-15|15:07:07.078] Executed block                               module=state height=2 validTxs=0 invalidTxs=0
+I[2019-05-15|15:07:07.107] Committed state                              module=state height=2 txs=0 appHash=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+I[2019-05-15|15:07:12.113] Executed block                               module=state height=3 validTxs=0 invalidTxs=0
+I[2019-05-15|15:07:12.144] Committed state                              module=state height=3 txs=0 appHash=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+I[2019-05-15|15:07:17.168] Executed block                               module=state height=4 validTxs=0 invalidTxs=0
+I[2019-05-15|15:07:17.207] Committed state                              module=state height=4 txs=0 appHash=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+</code></pre>
+
+<h3 id="you-may-stop-and-run-again">You may stop, and RUN again</h3>
+
+<pre><code>I[2019-05-15|14:48:58.191] Starting ABCI with Tendermint                module=main 
+I[2019-05-15|14:48:58.343] Loading mem state                            module=main 
+I[2019-05-15|14:48:58.344] App loaded                                   module=main time=929.472µs
+I[2019-05-15|14:48:58.399] Search index loaded!                         module=main time=16.928556ms
+I[2019-05-15|14:48:58.399] Search index starting listen new links       module=main 
+I[2019-05-15|14:48:58.399] Search index starting listen new rank        module=main 
+E[2019-05-15|14:48:58.638] Couldn't connect to any seeds                module=p2p 
+I[2019-05-15|14:49:03.716] Executed block                               module=state height=2032 validTxs=0 invalidTxs=0
+I[2019-05-15|14:49:03.755] Committed state                              module=state height=2032 txs=0 appHash=1BAA91AD6FD9742B7B094204037F80A8174673BA0FF304D3FF5DFEEAF8FF7DDC
+I[2019-05-15|14:49:08.759] Executed block                               module=state height=2033 validTxs=0 invalidTxs=0
+I[2019-05-15|14:49:08.793] Committed state                              module=state height=2033 txs=0 appHash=1BAA91AD6FD9742B7B094204037F80A8174673BA0FF304D3FF5DFEEAF8FF7DDC
+I[2019-05-15|14:49:13.826] Executed block                               module=state height=2034 validTxs=0 invalidTxs=0
+I[2019-05-15|14:49:13.860] Committed state                              module=state height=2034 txs=0 appHash=1BAA91AD6FD9742B7B094204037F80A8174673BA0FF304D3FF5DFEEAF8FF7DDC
+</code></pre>
+
+<h3 id="reset">Reset</h3>
+
+<p>You can reset chains data to genesis at any time by executing <strong>RESET</strong> run configuration</p>
+
+<pre><code>I[2019-05-15|15:09:43.338] Removed existing address book                module=main file=mytestnet/node0/cyberd/config/addrbook.json
+I[2019-05-15|15:09:43.345] Removed all blockchain history               module=main dir=mytestnet/node0/cyberd/data
+I[2019-05-15|15:09:43.347] Reset private validator file to genesis state module=main keyFile=mytestnet/node0/cyberd/config/priv_validator_key.json stateFile=mytestnet/node0/cyberd/data/priv_validator_state.json
+</code></pre>
+
+<h2 id="exploring">Exploring</h2>
+
+<p>Guide to all commands you may to research here: <a href="https://github.com/cybercongress/cyberd/blob/master/docs/help/ultimate-commands-guide_v2.md">Ultimate cyberd CLI guide</a></p>
+
+<h3 id="before-build-cyberd-cli">Before, build cyberd cli:</h3>
+
+<pre><code>go build -o cyberdcli ./cli
+</code></pre>
+
+<p>You will get cyberdcli into you project root</p>
+
+<h3 id="add-keys">Add keys:</h3>
+
+<pre><code>./cyberdcli keys add validator --recover
+</code></pre>
+
+<p>Enter and you protection password-passphrase and mnemocic from file <strong>mytestnet/node0/cyberdcli/key_seed.json</strong></p>
+
+<pre><code>
+Enter a passphrase to encrypt your key to disk:
+Repeat the passphrase:
+&gt; Enter your bip39 mnemonic
+inhale enforce brand fever core smart draft ceiling among cluster orbit robust tonight elephant below twice goat update uncover employ spider brass consider shiver
+
+NAME:   TYPE:   ADDRESS:                                        PUBKEY:
+validator       local   cyber18l4v00ar4xsgzc4rr40tfctcjgyp7ppwysdcns    cyberpub1addwnpepq0zm06twxtf7ezv4nj9dhud9ds0fnhkks6qw4g8pdwxzh3evggpvvksh60l
+
+</code></pre>
+
+<h3 id="query-status">Query status:</h3>
+
+<pre><code>./cyberdcli status --indent
+</code></pre>
+
+<pre><code>{
+  &quot;node_info&quot;: {
+    &quot;protocol_version&quot;: {
+      &quot;p2p&quot;: &quot;7&quot;,
+      &quot;block&quot;: &quot;10&quot;,
+      &quot;app&quot;: &quot;0&quot;
+    },
+    &quot;id&quot;: &quot;b99f3254757310d1f470f5cd0331b766f2a843f9&quot;,
+    &quot;listen_addr&quot;: &quot;tcp://0.0.0.0:26656&quot;,
+    &quot;network&quot;: &quot;chain-K6U4uZ&quot;,
+    &quot;version&quot;: &quot;0.30.1&quot;,
+    &quot;channels&quot;: &quot;4020212223303800&quot;,
+    &quot;moniker&quot;: &quot;node0&quot;,
+    &quot;other&quot;: {
+      &quot;tx_index&quot;: &quot;on&quot;,
+      &quot;rpc_address&quot;: &quot;tcp://0.0.0.0:26657&quot;
+    }
+  },
+  &quot;sync_info&quot;: {
+    &quot;latest_block_hash&quot;: &quot;8059683636349AF9237FABFD147BAD89C7188571E37E8F09356B1837A88337BA&quot;,
+    &quot;latest_app_hash&quot;: &quot;E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855&quot;,
+    &quot;latest_block_height&quot;: &quot;134&quot;,
+    &quot;latest_block_time&quot;: &quot;2019-05-15T09:04:31.768026Z&quot;,
+    &quot;catching_up&quot;: false
+  },
+  &quot;validator_info&quot;: {
+    &quot;address&quot;: &quot;9C2C13F2B6608BF00BADF501A04E728AC5FF7ADC&quot;,
+    &quot;pub_key&quot;: {
+      &quot;type&quot;: &quot;tendermint/PubKeyEd25519&quot;,
+      &quot;value&quot;: &quot;or7X/1BYcGE1cVX5e3vG9G76JPfXZDKTDg8YL3vtKzo=&quot;
+    },
+    &quot;voting_power&quot;: &quot;10000000000&quot;
+  }
+}
+
+</code></pre>
+
+<h3 id="query-balance">Query balance:</h3>
+
+<pre><code>./cyberdcli query account cyber18l4v00ar4xsgzc4rr40tfctcjgyp7ppwysdcns 
+</code></pre>
+
+<pre><code>Account:
+  Address:       cyber18l4v00ar4xsgzc4rr40tfctcjgyp7ppwysdcns
+  Pubkey:        cyberpub1addwnpepq0zm06twxtf7ezv4nj9dhud9ds0fnhkks6qw4g8pdwxzh3evggpvvksh60l
+  Coins:         10000000000000000cyb
+  AccountNumber: 0
+  Sequence:      1
+</code></pre>
+
+<h3 id="query-validators">Query validators:</h3>
+
+<pre><code>./cyberdcli query staking validators  
+</code></pre>
+
+<pre><code>Validator
+  Operator Address:           cybervaloper18l4v00ar4xsgzc4rr40tfctcjgyp7ppwy3lgak
+  Validator Consensus Pubkey: cybervalconspub1zcjduepq52ld0l6stpcxzdt32huhk77x73h05f8h6ajr9ycwpuvz77ld9vaq6ka2zl
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     10000000000000000
+  Delegator Shares:           10000000000000000.000000000000000000
+  Description:                {node0 tst com.com det}
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.000000000000000000, maxRate: 0.000000000000000000, maxChangeRate: 0.000000000000000000, updateTime: 2019-05-15 08:52:36.324624 +0000 UTC
+
+</code></pre>
+
+<h3 id="add-links">Add links</h3>
+
+<pre><code>./cyberdcli link --from=validator --cid-from=QmbTARMsUw9X2ZEbBaFXRu9JEqNN2g4VZ6DPgtgZH1opy9 --cid-to=QmNWkR2v4ZEzT43xiNKJcFPkFQioGbhqsWcE5qayWQHXAo --chain-id=chain-K6U4uZ
+./cyberdcli link --from=validator --cid-from=QmbTARMsUw9X2ZEbBaFXRu9JEqNN2g4VZ6DPgtgZH1opy9 --cid-to=Qmd7AaekFAxXedSQx3B3h8Wc5aeYPYRiYF83Vjb4tVLkMM --chain-id=chain-K6U4uZ
+./cyberdcli link --from=validator --cid-from=QmbTARMsUw9X2ZEbBaFXRu9JEqNN2g4VZ6DPgtgZH1opy9 --cid-to=QmfSh5obPXmkaTd9aaNCYWxnKHZTH6EYeEh7Hq7xgGnRVy --chain-id=chain-K6U4uZ
+</code></pre>
+
+<pre><code>{&quot;chain_id&quot;:&quot;chain-K6U4uZ&quot;,&quot;account_number&quot;:&quot;0&quot;,&quot;sequence&quot;:&quot;1&quot;,&quot;fee&quot;:{&quot;amount&quot;:null,&quot;gas&quot;:&quot;200000&quot;},&quot;msgs&quot;:[{&quot;type&quot;:&quot;cyberd/Link&quot;,&quot;value&quot;:{&quot;address&quot;:&quot;cyber18l4v00ar4xsgzc4rr40tfctcjgyp7ppwysdcns&quot;,&quot;links&quot;:[{&quot;from&quot;:&quot;QmbTARMsUw9X2ZEbBaFXRu9JEqNN2g4VZ6DPgtgZH1opy9&quot;,&quot;to&quot;:&quot;QmNWkR2v4ZEzT43xiNKJcFPkFQioGbhqsWcE5qayWQHXAo&quot;}]}}],&quot;memo&quot;:&quot;&quot;}
+
+confirm transaction before signing and broadcasting [Y/n]: Y
+Password to sign with 'validator':
+Response:
+  Height: 1720
+  TxHash: 68C4F6389D36747A6A609CCDD9D44027A5234850FF065C78D1B1AB3FAC421541
+  Logs: [{&quot;msg_index&quot;:0,&quot;success&quot;:true,&quot;log&quot;:&quot;&quot;}]
+  GasUsed: 31368
+  Tags: 
+    - action = link
+</code></pre>
+
+<h3 id="search-and-get-links-with-rank">Search and get links with rank:</h3>
+
+<pre><code>curl -X GET 'localhost:26657/search?cid=&quot;QmbTARMsUw9X2ZEbBaFXRu9JEqNN2g4VZ6DPgtgZH1opy9&quot;'
+</code></pre>
+
+<h4 id="links-added-rank-for-them-will-be-computed-at-next-round">Links added, rank for them will be computed at next round:</h4>
+
+<pre><code>{
+  &quot;jsonrpc&quot;: &quot;2.0&quot;,
+  &quot;id&quot;: &quot;&quot;,
+  &quot;result&quot;: {
+    &quot;cids&quot;: [
+      {
+        &quot;cid&quot;: &quot;QmNWkR2v4ZEzT43xiNKJcFPkFQioGbhqsWcE5qayWQHXAo&quot;,
+        &quot;rank&quot;: 0
+      },
+      {
+        &quot;cid&quot;: &quot;Qmd7AaekFAxXedSQx3B3h8Wc5aeYPYRiYF83Vjb4tVLkMM&quot;,
+        &quot;rank&quot;: 0
+      },
+      {
+        &quot;cid&quot;: &quot;QmfSh5obPXmkaTd9aaNCYWxnKHZTH6EYeEh7Hq7xgGnRVy&quot;,
+        &quot;rank&quot;: 0
+      }
+    ],
+    &quot;total&quot;: &quot;3&quot;,
+    &quot;page&quot;: &quot;0&quot;,
+    &quot;perPage&quot;: &quot;100&quot;
+  }
+}%   
+</code></pre>
+
+<h4 id="when-rank-computed">When rank computed:</h4>
+
+<pre><code>{
+  &quot;jsonrpc&quot;: &quot;2.0&quot;,
+  &quot;id&quot;: &quot;&quot;,
+  &quot;result&quot;: {
+    &quot;cids&quot;: [
+      {
+        &quot;cid&quot;: &quot;QmNWkR2v4ZEzT43xiNKJcFPkFQioGbhqsWcE5qayWQHXAo&quot;,
+        &quot;rank&quot;: 0.056093750000000005
+      },
+      {
+        &quot;cid&quot;: &quot;Qmd7AaekFAxXedSQx3B3h8Wc5aeYPYRiYF83Vjb4tVLkMM&quot;,
+        &quot;rank&quot;: 0.056093750000000005
+      },
+      {
+        &quot;cid&quot;: &quot;QmfSh5obPXmkaTd9aaNCYWxnKHZTH6EYeEh7Hq7xgGnRVy&quot;,
+        &quot;rank&quot;: 0.056093750000000005
+      }
+    ],
+    &quot;total&quot;: &quot;3&quot;,
+    &quot;page&quot;: &quot;0&quot;,
+    &quot;perPage&quot;: &quot;100&quot;
+  }
+}   
+</code></pre>
+
+<h1 id="fuckgoogle">#fuckgoogle</h1>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#setup-development-environment">Setup development environment</a>
+<ul>
+<li><a href="#prestart">Prestart</a></li>
+<li><a href="#import-project-to-goland">Import project to GoLand</a></li>
+<li><a href="#add-run-configurations">Add Run Configurations</a>
+<ul>
+<li><a href="#add-run-configuration-with-gpu">Add run configuration with GPU</a>
+<ul>
+<li><a href="#notes-about-gpu-dev-environment">Notes about GPU dev environment</a></li>
+</ul></li>
+<li><a href="#add-run-configuration-with-cpu">Add run configuration with CPU</a></li>
+<li><a href="#add-reset-configuration">Add reset configuration</a></li>
+</ul></li>
+<li><a href="#running-node">Running Node</a>
+<ul>
+<li><a href="#generate-testnet">Generate testnet</a></li>
+<li><a href="#run-with-gpu-or-cpu">Run with GPU or CPU</a></li>
+<li><a href="#you-may-stop-and-run-again">You may stop, and RUN again</a></li>
+<li><a href="#reset">Reset</a></li>
+</ul></li>
+<li><a href="#exploring">Exploring</a>
+<ul>
+<li><a href="#before-build-cyberd-cli">Before, build cyberd cli:</a></li>
+<li><a href="#add-keys">Add keys:</a></li>
+<li><a href="#query-status">Query status:</a></li>
+<li><a href="#query-balance">Query balance:</a></li>
+<li><a href="#query-validators">Query validators:</a></li>
+<li><a href="#add-links">Add links</a></li>
+<li><a href="#search-and-get-links-with-rank">Search and get links with rank:</a>
+<ul>
+<li><a href="#links-added-rank-for-them-will-be-computed-at-next-round">Links added, rank for them will be computed at next round:</a></li>
+<li><a href="#when-rank-computed">When rank computed:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#fuckgoogle">#fuckgoogle</a></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
